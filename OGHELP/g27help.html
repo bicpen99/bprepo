@@ -1,0 +1,2796 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=us-ascii">
+<meta name=Generator content="Microsoft Word 11 (filtered)">
+<title>WELL SEARCH</title>
+
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+h5
+	{margin-right:0in;
+	margin-left:0in;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:blue;
+	text-decoration:underline;}
+p
+	{margin-right:0in;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US link=blue vlink=blue>
+
+<div class=Section1>
+
+<p align=center style='text-align:center'><b><span style='font-size:36.0pt'>Well
+Search</span></b></p>
+
+<p>&nbsp;<a href="G27HELP.doc"><span style='text-decoration:none'><img
+border=0 width=80 height=77 src="button_print.gif"></span></a><a
+href="w_g27help.doc"> <span style='font-size:10.0pt'>Click here to print Instruction Manual</span></a></p>
+
+<p align=center style='text-align:center'><b><span style='font-size:18.0pt'>&nbsp;
+<a name=TableofContents>Table of Contents</a></span></b></p>
+
+<p><a href="#Overview"><span style='font-size:13.5pt'>Overview</span></a></p>
+
+<p><span style='font-size:13.5pt'><a href="#Oil_and_Gas_Well_Inventory_System">Oil
+&amp; Gas Well Inventory System</a></span></p>
+
+<p><span style='font-size:13.5pt'><a href="#Well_Search">Well Search</a></span></p>
+
+<p><span style='font-size:13.5pt'><a href="#Well_Name">Well Name</a></span></p>
+
+<p><span style='font-size:13.5pt'><a href="#Well_API_Number">Well API Number</a></span></p>
+
+<p><span style='font-size:13.5pt'><a href="#Well_Operator">Well Operator</a></span></p>
+
+<p><span style='font-size:13.5pt'><a href="#Date_Range">Date Range</a></span></p>
+
+<p><span style='font-size:13.5pt'><a href="#Location">Location</a></span></p>
+
+<p><span style='font-size:13.5pt'><a href="#Saving_Results">Saving Results</a></span></p>
+
+<p><span style='font-size:13.5pt'><a href="#View_Documents">View Document
+Images</a></span></p>
+
+<p><span style='font-size:13.5pt'><a href="#Basic">Basic</a></span></p>
+
+<p><span style='font-size:13.5pt'><a href="#PrevOper">Prev. Oper</a></span></p>
+
+<p><span style='font-size:13.5pt'><a href="#Permits">Permits</a></span></p>
+
+<p><span style='font-size:13.5pt'><a href="#Completions">Completions</a></span></p>
+
+<p><span style='font-size:13.5pt'><a href="#Production">Production</a></span></p>
+
+<p><span style='font-size:13.5pt'><a href="#Plugging">Plugging</a></span></p>
+
+<p><span style='font-size:13.5pt'><a href="#Conclusion">Conclusion</a></span></p>
+
+<p><span style='font-size:13.5pt'><a href="#Fields">Explanation of Fields</a></span></p>
+
+<p><a href="#Operator_Browse"><span style='font-size:13.5pt'>Operator Browse</span></a></p>
+
+<p><img border=0 width=576 height=9 src="line_blue.gif"></p>
+
+<p align=right style='text-align:right'><a href="#TableofContents">Back<span style='text-decoration:none'><img border=0 width=140 height=60 src="button_blue.gif"></span></a></p>
+
+<p><a name=Overview><b><span style='font-size:18.0pt'>Overview</span></b></a></p>
+
+<p>Information accessed through the web forms is query-only. No records can be
+inserted, updated or removed via the web application. </p>
+
+<p>The API Number Suffix is not shown on the Well Results form, all suffixed
+records are queried as one record. When a record is queried it will display all
+of the information that is associated with that well. The suffixed records can
+be viewed by clicking one of&nbsp; the <a href="#Permits">Permits</a>, <a
+href="#Completions">Completions</a>, and <a href="#Plugging">Plugging</a>
+Buttons. Suffixes are used when more than one occurrence of an Intent to Drill,
+Completion, or Plugging exist. This allows storage and display of all of the
+historical data related to a well. The last or greatest suffix should be the
+record that is in effect and replaces all earlier (historical) occurrences of
+that well's information. When one of the buttons in the <a
+href="#Saving_Results">Save Data</a> section are pushed all of the suffixed
+records will be incorporated in the resulting .CSV output file.</p>
+
+<p>There are several fields added to this system that will not contain any data
+until the system is complete. These fields are listed in the <a href="#Fields">Explanation
+of fields</a> at the end of the manual. </p>
+
+<p>A search for well information will always start on the Well Search form and
+be displayed on the Results tab page, it is possible to query the database via
+the results form but not recommended.</p>
+
+<p>If there is more than one record displayed, the current record will be
+highlighted in light blue and other records may be navigated to by using the
+scroll bar, the arrow keys, or clicking on the desired record.</p>
+
+<p>After a well has been chosen, pushing one of&nbsp; <a href="#Basic">Basic</a>,
+<a href="#PrevOper">Prev Oper</a>, <a href="#Permits">Permits</a>, <a
+href="#Completions">Completions</a>, <a href="#Production">Production</a>, or <a
+href="#Plugging">Plugging</a> buttons (at the top of the form) will provide
+more detailed information. If the button is grayed out there is no data to
+display. The return button will take you back to the results tab page.</p>
+
+<p>Most of the forms have tabs. When the tabs are clicked, it will bring up a
+new subset of information.</p>
+
+<p><img border=0 width=576 height=9 src="line_blue.gif"></p>
+
+<p align=right style='text-align:right'><a href="#TableofContents">Back</a><a
+href="#TableofContents"><span style='text-decoration:none'><img border=0
+width=140 height=60 src="button_blue.gif"></span></a></p>
+
+<p class=MsoNormal><a name="Oil_and_Gas_Well_Inventory_System"><b><span style='font-size:18.0pt'>Oil and Gas Well Inventory System</span></b></a></p>
+
+<p>The Well Search , Operator Browse, and Legals Converter are available for
+Internet use.</p>
+
+<p><img border=0 width=576 height=360src="w_g100menu.jpg"></p>
+
+<p><img border=0 width=576 height=9 src="line_blue.gif"></p>
+
+<p align=right style='text-align:right'><a href="#TableofContents">Back</a> <a href="#TableofContents"><span style='text-decoration:none'><img border=0 width=140 height=60 src "button_blue.gif"></span></a></p>
+
+<p class=MsoNormal><a name="Well_Search"><b><span style='font-size:18.0pt'>Well
+Search </span></b></a></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><img border=0 width=974 height=579 src="search.jpg"></p>
+
+<p>When searching the Well Inventory system try not to include too many search
+criteria. Doing so might restrict the results, causing too few records to be
+displayed. It is simple to navigate back to the Search tab page from the
+Results tab page and add new restrictions to your search and re-query the
+database, to narrow your results.&nbsp;</p>
+
+<p class=MsoNormal>Search </p>
+
+<p>To initiate a search, enter your search criteria and push the &#8220;Search
+Now&#8221; button. Your results will display on the &#8220;Results&#8221; tab
+page.</p>
+
+<p><img border=0 width=901 height=523
+src="result.jpg"></p>
+
+<p align=right style='text-align:right'><a href="#TableofContents">Back<span
+style='text-decoration:none'><img border=0 width=140 height=60
+src="button_blue.gif"></span></a></p>
+
+<p><a name="Well_Name"><b><span style='font-size:18.0pt'>Well Name</span></b></a></p>
+
+<p><img border=0 width=575 height=182
+src="wellname.jpg"></p>
+
+<p>The Well Inventory System can be searched using Well Name with or without
+the Well Number. The Search tab page allows&nbsp; the option of searching for
+well information based on: </p>
+
+<p>Wells that have an <b>exact match</b> of text entered. </p>
+
+<p>Wells that have a name that <b>begins with</b> the text entered. </p>
+
+<p>Well names that <b>end with</b> the text entered. </p>
+
+<p>Wells that <b>include</b> the text entered in their Well Name. </p>
+
+<p>Including the Well Number in a search is not recommended. The Well Number
+field may contain characters other than numbers, such as &quot;1-3&quot;&nbsp;
+which may cause the results to exclude more records than expected.</p>
+
+<p><img border=0 width=576 height=9
+src="line_blue.gif"></p>
+
+<p align=right style='text-align:right'><a href="#TableofContents">Back<span
+style='text-decoration:none'><img border=0 width=140 height=60
+src="button_blue.gif"></span></a></p>
+
+<p><a name="Well_API_Number"><b><span style='font-size:18.0pt'>Well API Number</span></b></a></p>
+
+<p><img border=0 width=293 height=191
+src="api.jpg"></p>
+
+<p>The API Number consists of two separate fields on the search tab page, API
+County Number and API Well Number. The API County field reflects the county in
+which the surface of the well is located. The API Number is uniquely assigned
+to each well. All wells in a county will be returned by entering an API County
+Number. Push the &#8220;Select API County&#8221; button to select the API Number
+by County Name. &nbsp;Note, the API County is not necessarily the same as the Location County.&nbsp; The Location County is either the county containing the Surface Hole
+or the county containing the Bottom Hole, as specified in the Location section.&nbsp;
+</p>
+
+<p>Once the results are returned, and one of&nbsp; Basic, Prev_Oper, Permits,
+Completions, Production, or Plugging tabs are selected, you may find more than
+one record displayed. This allows storage and display of all of the historical
+data related to a well&#8217;s history. Wells can have more than one life
+cycle. A well can be permitted, drilled, and completed, then re-entered via a
+new permit and re-completed, retaining the same Api Number.</p>
+
+<p><img border=0 width=576 height=9
+src="line_blue.gif"></p>
+
+<p align=right style='text-align:right'><a href="#TableofContents">Back<span
+style='text-decoration:none'><img border=0 width=140 height=60
+src="button_blue.gif"></span></a></p>
+
+<p><a name="Well_Operator"><b><span style='font-size:18.0pt'>Well Operator<br>
+</span></b></a><b><span style='font-size:18.0pt'><img border=0 width=567
+height=173 src="oper.jpg"></span></b></p>
+
+<p>To search the Well Inventory system for wells operated by a particular
+operator enter an Operator Name or Operator Number. If unsure of the exact
+spelling of an operator&#8217;s name, as it exists in the system, push the
+&#8220;Select Operator&#8221; button or &quot;double click&quot; the field and
+select one of the operators from the list provided. </p>
+
+<p><img border=0 width=576 height=9
+src="line_blue.gif"></p>
+
+<p align=right style='text-align:right'><a href="#TableofContents">Back<span
+style='text-decoration:none'><img border=0 width=140 height=60
+src="button_blue.gif"></span></a></p>
+
+<p><a name="Date_Range"></a><b><span style='font-size:18.0pt'>Date</span></b><b><span
+ style='font-size:18.0pt'> Range</span></b></p>
+
+<p><img border=0 width=488 height=169
+src="date.jpg"></p>
+
+<p>The Well Inventory system will allow searches based upon the date of a <b>Permit
+to Drill</b>, <b>Spud Date</b>, <b>Completion Date</b>, <b>First Production
+Date</b> or a <b>Plugging Date</b>. To search the Well Inventory system based
+on the date a well was permitted to drill, spudded, completed, first produced,
+or plugged select one of the radio buttons and enter the date the search should
+be based.</p>
+
+<p>To select a <b>particular day</b> for your search enter that date in both
+the Begin Date and End Date and select one of the radio buttons.</p>
+
+<p>To search based on a <b>date range</b> enter the Beginning Date and the
+Ending Date of the period and select one of the radio buttons.&nbsp;&nbsp; </p>
+
+<p>To search for all of the Permits (for example) that have been <b>approved
+since</b> 1/1/2005 enter that date in the Begin Date field and leave the End
+Date blank. Select the radio button for &#8220;Permit to Drill&#8221;. The
+results will display all of the records of wells that have a permit to drill
+approved date from 1/1/2005 to today&#8217;s date.</p>
+
+<p>If the End Date is used and the Begin Date is left blank the results will
+display all of the permits to drill <b>approved prior</b> to the date entered,
+if the &#8220;Permit to Drill&#8221; radio button is selected.</p>
+
+<p><img border=0 width=576 height=9
+src="line_blue.gif"></p>
+
+<p align=right style='text-align:right'><a href="#TableofContents">Back<span
+style='text-decoration:none'><img border=0 width=140 height=60
+src="button_blue.gif"></span></a></p>
+
+<p><a name=Location><b><span style='font-size:18.0pt'>Location</span></b></a></p>
+
+<p><img border=0 width=761 height=200
+src="location.jpg"></p>
+
+<p>The Well Inventory System may be searched by well location, according to the
+Surface Hole or the Bottom Hole. &nbsp;To search by location enter any of the
+location information known.&nbsp; If the Surface Hole Location radio button is
+selected, the system will search for wells with a surface location as specified
+in the Location section.&nbsp; If the Bottom Hole Location radio button is
+selected, the system will search for wells with a bottom hole location as
+specified in this section.&nbsp; It should be noted that the Results screen
+always displays the surface location of the well.&nbsp; If Surface Hole
+Location is selected, the Results screen will display the legal description for
+the well surface.&nbsp; If Bottom Hole Location is selected, the Results screen
+will display the legal description for the well surface that has a bottom hole
+as specified in this section.</p>
+
+<p>The <b>County</b> may be entered or may be selected by pushing the &#8220;Select Location County&#8221; button or double clicking the county text box. Note, the
+county is the county that the Surface Hole or Bottom Hole is located in; it is
+not necessarily the county specified as the API County.&nbsp; Once the county
+is selected a button will appear under the <b>Township</b> Field. Pushing this
+button will provide all possible townships for the county selected. Once the
+county and township have been selected a &#8220;Select <b>Range</b>&#8221;
+button will appear. Pushing this button will provide all range values available
+for the county and township selected.&nbsp;Once the County, township and range
+are selected a &#8220;Select <b>Section</b>&#8221; button will appear. This
+button will provide all&nbsp;sections available for the County, township and
+range selected. </p>
+
+<p>&nbsp;</p>
+
+<p>It is possible to search the Well Inventory System by entering values in any
+of the fields directly.</p>
+
+<p>The location section of the search tab page includes three radio buttons,
+&#8220;Indian Meridian&#8221;, &#8220;Cimarron Meridian&#8221; or &#8220;Not
+Used&#8221;. Including the <b>Indian Meridian</b> or <b>Cimarron Meridian</b>
+in your search criteria will speed the search although your search will work
+fine with the &#8220;Not Used&#8221; radio button selected.&nbsp;</p>
+
+<p><img border=0 width=576 height=9
+src="line_blue.gif"></p>
+
+<p align=right style='text-align:right'><a href="#TableofContents">Back<span
+style='text-decoration:none'><img border=0 width=140 height=60
+src="button_blue.gif"></span></a></p>
+
+<p><a name="Saving_Results"><b><span style='font-size:18.0pt'>Saving Results</span></b></a></p>
+
+<p><img border=0 width=321 height=161
+src="savequery.jpg"></p>
+
+<p>The results of your search can be viewed and saved to your PC.&nbsp; The
+&#8220;Results&#8221; tab page has four buttons located near the bottom center
+of the page in the &#8220;Save Data&#8221; section. They are &#8220;<a
+href="#View all Basic Info">View all Basic Info</a>&#8221;, &#8220;<a
+href="#View all ITDs">View all ITDs</a>&#8221;, &#8220;<a
+href="#View all Production">View All Production</a>&#8221; and &#8220;<a
+href="#View all Operators">View all Operators</a>&#8221;.&nbsp;</p>
+
+<p><b>If your Internet explorer allows pop-ups</b> you can push one of these
+buttons to display a spreadsheet of the results of your search. These buttons
+are dependent upon how your PC opens &quot; .CSV&quot; (<b>C</b>omma <b>S</b>eparated
+<b>V</b>alues) files.&nbsp;</p>
+
+<p>If your PC has no application installed to open this type of file, it may
+open the file as a text file. PCs running with Microsoft&#8217;s Excel will
+open the &quot;.CSV&quot; file as a spreadsheet.&nbsp;To save the file once
+opened go to &quot;<b>FILE\SAVE AS&quot;</b> and save the file as a
+spreadsheet, workbook or CSV file on your PC. If not saved as an Excel file you
+will loose any formatting such as leading zeros or date
+formats.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p><img border=0 width=576 height=9
+src="line_blue.gif"></p>
+
+<p align=right style='text-align:right'><a href="#TableofContents">Back<span
+style='text-decoration:none'><img border=0 width=140 height=60
+src="button_blue.gif"></span></a></p>
+
+<p><a name="View_all_Basic_Info"><b><span style='font-size:18.0pt'>View all
+Basic Info</span></b></a></p>
+
+<p><img border=0 width=321 height=161
+src="savequery.jpg"></p>
+
+<p>This button produces a spreadsheet that includes all of the records related
+to your search. You will find wells that have more than one record. This allows
+storage and display of all of the historical data related to a well&#8217;s
+history. Wells can have more than one life cycle. A well can be permitted,
+drilled, and completed, then re-entered via a new permit and re-completed. The
+spreadsheet produced will contain general information about the wells returned
+from your search, including location, status, operator, well class and
+depth.&nbsp;</p>
+
+<p><img border=0 width=576 height=9
+src="line_blue.gif"></p>
+
+<p align=right style='text-align:right'><a href="#TableofContents">Back<span
+style='text-decoration:none'><img border=0 width=140 height=60
+src="button_blue.gif"></span></a></p>
+
+<p><a name="View_all_ITDs"><b><span style='font-size:18.0pt'>View all ITDs</span></b></a></p>
+
+<p><img border=0 width=321 height=161
+src="savequery.jpg"></p>
+
+<p>This button will produce a spreadsheet that includes all of the Intent to
+Drill records relating to your search. You will find wells that have more than
+one record. This allows storage and display of all of the historical data
+related to a well&#8217;s history. Wells can have more than one life cycle. A
+well can be permitted, drilled, and completed, then re-entered via a new permit
+and re-completed.&nbsp; The spreadsheet produced will contain location,
+operator, drilling type, well class, formations and depths.</p>
+
+<p><img border=0 width=576 height=9
+src="line_blue.gif"></p>
+
+<p align=right style='text-align:right'><a href="#TableofContents">Back<span
+style='text-decoration:none'><img border=0 width=140 height=60
+src="button_blue.gif"></span></a></p>
+
+<p><a name="View_all_Production"><b><span style='font-size:18.0pt'>View all
+Production</span></b></a><b><span style='font-size:18.0pt'> </span></b></p>
+
+<p><img border=0 width=321 height=161
+src="savequery.jpg"></p>
+
+<p>This button will produce a spreadsheet that includes all of the production
+records relating to your search. You will find wells that have more than one
+record. This allows storage and display of all of the historical data related
+to a well&#8217;s history. Wells can have more than one life cycle. A well can
+be permitted, drilled, and completed, then re-entered via a new permit and re-completed.
+Also, a well having more than one purchaser or producing formations will have
+multiple production records.&nbsp; The spreadsheet produced will contain
+location, operator, purchaser, formation, lease number and Gas volumes per
+month. Each year will be displayed on one line. Oil production has not been
+tracked by the Commission for several years, and is not available from our
+database. </p>
+
+<p><img border=0 width=576 height=9
+src="line_blue.gif"></p>
+
+<p align=right style='text-align:right'><a href="#TableofContents">Back<span
+style='text-decoration:none'><img border=0 width=140 height=60
+src="button_blue.gif"></span></a></p>
+
+<p><a name="View_all_Operators"><b><span style='font-size:18.0pt'>View all
+Operators</span></b></a></p>
+
+<p><img border=0 width=321 height=161
+src="savequery.jpg"></p>
+
+<p>This button will produce a spreadsheet that includes all of the operator
+records relating to your search. The spreadsheet produced will contain company
+name, open/closed, phone and address.</p>
+
+<p><i>What do the buttons do?</i></p>
+
+<p>Six buttons have been provided, at the top of the Query form. If the buttons
+are grayed-out, that signifies that there is no information for that record.
+For instance, if a well has been queried and the Plugging button is gray, there
+is no plugging information. </p>
+
+<p><img border=0 width=576 height=9
+src="line_blue.gif"></p>
+
+<p align=right style='text-align:right'><a href="#TableofContents">Back</a> <a
+href="#TableofContents"><span style='text-decoration:none'><img border=0
+width=140 height=60
+src="button_blue.gif"></span></a></p>
+
+<p><a name="View_Documents"><b><span style='font-size:18.0pt'>View Doc</span></b></a></p>
+
+<p><img border=0 width=576 height=320
+src="view_doc.jpg"></p>
+
+<p>This button will take you to the Oklahoma Corporation Commission Oil and Gas
+Well Records Imaging System. If you select a record from the results tab page,
+and push this button it will display all of the forms in the Oil and Gas Well
+Records Imaging System that are related to the API Number of the well. It is
+simple to clear the API Number and enter location information to initiate
+another search for images that may relate to the well but do not have the API
+Number assigned to them.</p>
+
+<p><img border=0 width=576 height=9
+src="line_blue.gif"></p>
+
+<p align=right style='text-align:right'><a href="#TableofContents">Back</a> <a
+href="#TableofContents"><span style='text-decoration:none'><img border=0
+width=140 height=60
+src="button_blue.gif"></span></a></p>
+
+<p><a name="View_Well_Logs"><b><span style='font-size:18.0pt'>View Well Logs</span></b></a></p>
+
+<p><img border=0 width=550 height=324
+src="view_log.jpg"></p>
+
+<p>This button will take you to the Oklahoma Corporation Commission Oil and Gas
+Well Logs Imaging System. If you select a record from the results tab page, and
+push this button it will display all of the forms in the Well Logs Imaging
+System that are related to the API Number of the well. It is simple to clear
+the API Number and enter location information to initiate another search for
+log images that may relate to the well but do not have the API Number assigned
+to them.</p>
+
+<p><img border=0 width=576 height=9
+src="line_blue.gif"></p>
+
+<p align=right style='text-align:right'><a href="#TableofContents">Back</a> <a
+href="#TableofContents"><span style='text-decoration:none'><img border=0
+width=140 height=60
+src="button_blue.gif"></span></a></p>
+
+<p><a name="Save_Record"><b><span style='font-size:18.0pt'>Save Record</span></b></a></p>
+
+<p><img border=0 width=538 height=334
+src="save_rec.jpg"></p>
+
+<p>Pushing this button will produce a spreadsheet containing all of the basic
+information for the selected record.&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p><img border=0 width=576 height=9
+src="line_blue.gif"></p>
+
+<p align=right style='text-align:right'><a href="#TableofContents">Back</a> <a
+href="#TableofContents"><span style='text-decoration:none'><img border=0
+width=140 height=60
+src="button_blue.gif"></span></a></p>
+
+<p class=MsoNormal><a name=Basic><b><span style='font-size:18.0pt'>Basic</span></b></a></p>
+
+<p class=MsoNormal><img border=0 width=575 height=317
+src="basic.jpg"></p>
+
+<p>This is the Basic information form. It provides general information
+regarding a well. All of the wells will have some basic information. The Basic
+form will always be navigable from any of the other forms, by selecting the
+Basic tab. </p>
+
+<p>On the API Resolved to fields with the red labels there is a different
+display if an API number is 'Resolved to' or 'Resolved from'. If an API number
+has been resolved, the resolved number will show up in the API Resolved field
+with a label that says 'API Resolved to' and an 'R' in the resolved indicator
+field. While viewing an API number, which is the result of an API resolve, then
+the API number that it was resolved from will be in the API Resolved fields,
+and the label will change to 'API Resolved From'. Also, the Resolved indicator
+will be blank.</p>
+
+<p>The Effective Date is the date that the current operator became effective.
+This will help distinguish between previous operators and current operators.</p>
+
+<p>The State Lease item will not have any data until the system is complete.</p>
+
+<p>At this time all but a few records will have calculated Latitude and
+Longitude.</p>
+
+<p>This form also has a Current Operator Information tab. This will provide
+more detailed information on the current operator. This is the same information
+that is provided on the Operator Browse form.&nbsp;</p>
+
+<p><img border=0 width=576 height=9
+src="line_blue.gif"></p>
+
+<p align=right style='text-align:right'><a href="#TableofContents">Back</a> <a
+href="#TableofContents"><span style='text-decoration:none'><img border=0
+width=140 height=60
+src="button_blue.gif"></span></a></p>
+
+<p class=MsoNormal><a name=PrevOper><b><span style='font-size:18.0pt'>Prev.
+Oper.</span></b></a> </p>
+
+<p class=MsoNormal><img border=0 width=576 height=329
+src="g27prev1.jpg"></p>
+
+<p>The Previous Operator form provides information about the previous operators
+of this well. The previous operators are sorted in descending order with the
+most recent operator first. All previous operators for all suffixed API Numbers
+will be shown on this form. The effective date, if known, is the date that the
+corresponding previous operator became the effective operator of the well.</p>
+
+<p>Detailed information is provided about each previous operator listed. There
+is no need to go to the Operator Browse form to gather this information.</p>
+
+<p><img border=0 width=576 height=9
+src="line_blue.gif"></p>
+
+<p align=right style='text-align:right'><a href="#TableofContents">Back</a> <a
+href="#TableofContents"><span style='text-decoration:none'><img border=0
+width=140 height=60
+src="button_blue.gif"></span></a></p>
+
+<p class=MsoNormal><a name=Permits><b><span style='font-size:18.0pt'>Permits</span></b></a>
+</p>
+
+<p class=MsoNormal><img border=0 width=576 height=335
+src="g27perm1.jpg"></p>
+
+<p>The Permits form will not contain permits to drill which have not yet been
+approved. Once the permit is approved and receives an API Number it will be
+displayed.</p>
+
+<p>The Stage Collar Depth and PBTD (Proposed bottom total depth) will not
+contain any data until the update forms are in place.</p>
+
+<p>The Approval Date is used to display the Permit records in ascending order.
+The permit with the oldest date will be displayed first.</p>
+
+<p>The Order tab is provided to display all orders. The orders included will be
+Increased Density, Spacing, Special, and Location Exception.</p>
+
+<p><img border=0 width=576 height=9
+src="line_blue.gif"></p>
+
+<p align=right style='text-align:right'><a href="#TableofContents">Back</a> <a
+href="#TableofContents"><span style='text-decoration:none'><img border=0
+width=140 height=60
+src="button_blue.gif"></span></a></p>
+
+<p><a name=Completions><b><span style='font-size:18.0pt'>Completions</span></b></a></p>
+
+<p><img border=0 width=575 height=322
+src="g27comp1.jpg"></p>
+
+<p>The records will be in ascending order the earliest completion date will be
+displayed first. There will be cases when completion information is available
+and yet there is no Completion Date. In this case, records without completion
+dates will be displayed first.</p>
+
+<p>One of the things that will be on the Completions form, that will not be on
+other forms is an * (asterisk) in the S (suffix) field. This signifies that
+this information has been added to the database from other sources. Also, the
+Operator Name may be grey text instead of black. This indicates that, although
+a valid operator number was not available for lookup, the operator name was
+available as part of the historical completion record. Some of the completion records
+do not contain a completion date. These records were incorporated in the Well
+Inventory System from sources other than a form 1002A (Completion Report) from
+the operator. </p>
+
+<p>The Approved Date and Reject Date, on the Basic Tab page, will not contain
+any data but will be used when the system is completed. Also, the Measured
+Total Depth and&nbsp; BHL (bottom hole location) from Lease fields on the
+Bottom Hole tab page will not contain any data.</p>
+
+<p><img border=0 width=576 height=9
+src="line_blue.gif"></p>
+
+<p align=right style='text-align:right'><a href="#TableofContents">Back</a><a
+href="#TableofContents"><span style='text-decoration:none'><img border=0
+width=140 height=60
+src="button_blue.gif"></span></a></p>
+
+<p><a name=Production><b><span style='font-size:18.0pt'>Production</span></b></a></p>
+
+<p><img border=0 width=576 height=392
+src="g47prdn1.jpg"></p>
+
+<p>The production form has several terms that may require further explanation.
+The form has three sections, Allowable Unit, Annual Totals, and Monthly Totals.</p>
+
+<p>Wells that have Oil Production information will most likely be historical
+records. Oil volumes are displayed in barrels. Gas volumes are displayed in MCF
+(1000 cubic feet).</p>
+
+<p>The first section of the form is the Allowable Unit. An Allowable Unit is
+the amount of oil or gas, which can be produced in a certain time span for a
+specific unit as determined by the Corporation Commission. The unit could be a
+single formation, multiple commingled formations, or multiple wells in a pool.
+There can be more than one Allowable Unit for a well, if the well has more than
+one producing formation and the formations are not commingled. Check the status
+bar at the lower left of the Production form to see how many Allowable Units
+exist for the selected well. If the status bar displays &quot;Record: 1/1&quot;
+as it will in most cases, it signifies that only one Allowable Unit exists for
+the selected well. More than one well can share an allowable, provided they are
+producing from the same formation. When there are two or more Allowable Units
+per well, the scroll button next to Allowable Unit can be used to navigate
+between allowable units. The Allowable Number includes the county number, base
+number and sub number. The sub number is used to distinguish between separate
+Allowable Units within the same well. </p>
+
+<p>&nbsp;Next is the Allowable Class. There are Allowable Classes for Gas and
+Oil Wells. The Allowable Classes for Gas wells are Allocated Gas (AG),
+Unallocated Gas (UG), Guymon-Hugoton (GH), and Special Allocated Gas (SG). The
+Allowable Classes for Oil wells are Allocated Oil (AO) and Unallocated Oil
+(UO).</p>
+
+<p>&nbsp;There are three Allowable Types. They are Individual (I), Shared (S),
+and Ratable (R). A Shared Allowable is a situation where more than one well
+shares an allowable. Ratable is the same as shared allowable but the wells do
+not share equally. Wells that share an allowable will have the same Allowable
+Number but different API Numbers.</p>
+
+<p>&nbsp;The Pool Number is a five digit number used for special allocated
+wells. The pool number refers to a common source of supply for the wells that
+have the same pool number. When a well no longer is producing the Production
+Terminated field will display a &quot;Y&quot; for yes.</p>
+
+<p>The next section is the Annual Totals. Each allowable unit may have multiple
+years of production. The most current year is already selected. When the arrow
+button next to &quot;Select Year&quot; label is pressed all years of production
+will be shown. For each production year, there may be one or more reporters
+(purchasers, operators, transporters, etc.) reporting production. The Oil
+Totals and Gas Totals are based on all of the monthly volumes that has been
+reported for the selected year. The totals for the selected year for all
+reporters is calculated and displayed below the individual reporter totals. If
+a reporter is no longer reporting production, an &quot;N&quot; will appear in
+the currently reporting field. If there are more than 4 reporters, the scroll
+bar can be used to view the remaining reporters.</p>
+
+<p>In the Monthly Totals section, volumes that have been reported will be shown
+by month for the selected year. If nothing was reported, the field will be
+blank. If there is a &quot;0&quot; in the field, it means that the reporter did
+report a volume of &quot;0&quot;. The Oil Volume and Gas Volume totals are
+displayed for all the reporters for the selected year for each month. Use the
+scroll bar to view all twelve months. </p>
+
+<p><img border=0 width=576 height=9
+src="line_blue.gif"></p>
+
+<p align=right style='text-align:right'><a href="#TableofContents">Back</a><a
+href="#TableofContents"><span style='text-decoration:none'><img border=0
+width=140 height=60
+src="button_blue.gif"></span></a></p>
+
+<p><a name=Plugging><b><span style='font-size:18.0pt'>Plugging</span></b></a></p>
+
+<p><img border=0 width=576 height=299
+src="g27plug1.jpg"></p>
+
+<p>The Plugging form has tabs that can be used to view other information. The
+data will be in ascending order with the oldest plugging date first. A plugging
+completion date or a 1003D (Affidavit of Old Well Status) approved is required
+to create a plugging record.</p>
+
+<p>The Reject Date and Approved Date will not contain values until the system
+is complete with add and update forms.</p>
+
+<p><img border=0 width=576 height=9
+src="line_blue.gif"></p>
+
+<p align=right style='text-align:right'><a href="#TableofContents">Back<span
+style='text-decoration:none'><img border=0 width=140 height=60
+src="button_blue.gif"></span></a></p>
+
+<p><a name="Operator_Browse"><b><span style='font-size:18.0pt'>Operator Browse</span></b></a></p>
+
+<p><img border=0 width=576 height=346
+src="operbrws.jpg"></p>
+
+<p>&nbsp;The Operator Browse button will open the operator application. This
+application will provide lists of all operators, active operators, out of
+business operators, operators by county or a list of all, open and out of
+business purchasers. </p>
+
+<p><img border=0 width=576 height=9
+src="line_blue.gif"></p>
+
+<p align=right style='text-align:right'><a href="#TableofContents">Back<span
+style='text-decoration:none'><img border=0 width=140 height=60
+src="button_blue.gif"></span></a></p>
+
+<p><i>&nbsp;</i></p>
+
+<p><i>What additional information do we have?</i></p>
+
+<p>Well Status indicators are the OG and ITD columns. These status indicators
+will help in understand the status of the well. The UIC column indicates that
+this well may be used as a Underground Injection Well. This table may help explain
+the options available for the OG and ITD status fields.</p>
+
+<table class=MsoNormalTable border=1 cellspacing=1 cellpadding=0 width=626
+ style='width:469.5pt;border:outset black 1.0pt'>
+ <tr style='height:10.5pt'>
+  <td width="44%" colspan=2 valign=top style='width:44.0%;border:inset black 1.0pt;
+  padding:1.5pt 1.5pt 1.5pt 1.5pt;height:10.5pt'>
+  <p align=center style='text-align:center;line-height:10.5pt'><b><span
+  style='font-size:10.0pt;font-family:Arial'>ABREVIATIONS USED IN STATUS FIELD</span></b></p>
+  </td>
+  <td width="6%" valign=top style='width:6.0%;border:inset black 1.0pt;
+  padding:1.5pt 1.5pt 1.5pt 1.5pt;height:10.5pt'>
+  <p class=MsoNormal><span style='font-size:11.0pt'>&nbsp;</span></p>
+  </td>
+  <td width="51%" colspan=2 valign=top style='width:51.0%;border:inset black 1.0pt;
+  padding:1.5pt 1.5pt 1.5pt 1.5pt;height:10.5pt'>
+  <p align=center style='text-align:center;line-height:10.5pt'><b><span
+  style='font-size:10.0pt;font-family:Arial'>ABREVIATIONS USED IN PERM_STATUS
+  FIELD</span></b></p>
+  </td>
+ </tr>
+ <tr style='height:7.5pt'>
+  <td width="12%" valign=bottom style='width:12.0%;border:inset black 1.0pt;
+  padding:1.5pt 1.5pt 1.5pt 1.5pt;height:7.5pt'>
+  <p style='line-height:7.5pt'><span style='font-size:7.5pt;font-family:Arial'>UN</span></p>
+  </td>
+  <td width="32%" valign=bottom style='width:32.0%;border:inset black 1.0pt;
+  padding:1.5pt 1.5pt 1.5pt 1.5pt;height:7.5pt'>
+  <p style='line-height:7.5pt'><span style='font-size:7.5pt;font-family:Arial'>UNKNOWN</span></p>
+  </td>
+  <td width="6%" valign=top style='width:6.0%;border:inset black 1.0pt;
+  padding:1.5pt 1.5pt 1.5pt 1.5pt;height:7.5pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt'>&nbsp;</span></p>
+  </td>
+  <td width="20%" valign=bottom style='width:20.0%;border:inset black 1.0pt;
+  padding:1.5pt 1.5pt 1.5pt 1.5pt;height:7.5pt'>
+  <p style='line-height:7.5pt'><span style='font-size:7.5pt;font-family:Arial'>P</span></p>
+  </td>
+  <td width="31%" valign=bottom style='width:31.0%;border:inset black 1.0pt;
+  padding:1.5pt 1.5pt 1.5pt 1.5pt;height:7.5pt'>
+  <p style='line-height:7.5pt'><span style='font-size:7.5pt;font-family:Arial'>PENDING</span></p>
+  </td>
+ </tr>
+ <tr style='height:9.0pt'>
+  <td width="12%" valign=bottom style='width:12.0%;border:inset black 1.0pt;
+  padding:1.5pt 1.5pt 1.5pt 1.5pt;height:9.0pt'>
+  <p style='line-height:9.0pt'><span style='font-size:7.5pt;font-family:Arial'>ND</span></p>
+  </td>
+  <td width="32%" valign=bottom style='width:32.0%;border:inset black 1.0pt;
+  padding:1.5pt 1.5pt 1.5pt 1.5pt;height:9.0pt'>
+  <p style='line-height:9.0pt'><span style='font-size:7.5pt;font-family:Arial'>NEW
+  DRILL</span></p>
+  </td>
+  <td width="6%" valign=top style='width:6.0%;border:inset black 1.0pt;
+  padding:1.5pt 1.5pt 1.5pt 1.5pt;height:9.0pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt'>&nbsp;</span></p>
+  </td>
+  <td width="20%" valign=bottom style='width:20.0%;border:inset black 1.0pt;
+  padding:1.5pt 1.5pt 1.5pt 1.5pt;height:9.0pt'>
+  <p style='line-height:9.0pt'><span style='font-size:7.5pt;font-family:Arial'>E</span></p>
+  </td>
+  <td width="31%" valign=bottom style='width:31.0%;border:inset black 1.0pt;
+  padding:1.5pt 1.5pt 1.5pt 1.5pt;height:9.0pt'>
+  <p style='line-height:9.0pt'><span style='font-size:7.5pt;font-family:Arial'>EXPIRED</span></p>
+  </td>
+ </tr>
+ <tr style='height:3.75pt'>
+  <td width="12%" valign=bottom style='width:12.0%;border:inset black 1.0pt;
+  padding:1.5pt 1.5pt 1.5pt 1.5pt;height:3.75pt'>
+  <p><span style='font-size:7.5pt;font-family:Arial'>SP</span></p>
+  </td>
+  <td width="32%" valign=bottom style='width:32.0%;border:inset black 1.0pt;
+  padding:1.5pt 1.5pt 1.5pt 1.5pt;height:3.75pt'>
+  <p><span style='font-size:7.5pt;font-family:Arial'>SPUDDED</span></p>
+  </td>
+  <td width="6%" valign=top style='width:6.0%;border:inset black 1.0pt;
+  padding:1.5pt 1.5pt 1.5pt 1.5pt;height:3.75pt'>
+  <p class=MsoNormal><span style='font-size:4.0pt'>&nbsp;</span></p>
+  </td>
+  <td width="20%" valign=bottom style='width:20.0%;border:inset black 1.0pt;
+  padding:1.5pt 1.5pt 1.5pt 1.5pt;height:3.75pt'>
+  <p><span style='font-size:7.5pt;font-family:Arial'>C</span></p>
+  </td>
+  <td width="31%" valign=bottom style='width:31.0%;border:inset black 1.0pt;
+  padding:1.5pt 1.5pt 1.5pt 1.5pt;height:3.75pt'>
+  <p><span style='font-size:7.5pt;font-family:Arial'>CANCELED</span></p>
+  </td>
+ </tr>
+ <tr style='height:8.25pt'>
+  <td width="12%" valign=bottom style='width:12.0%;border:inset black 1.0pt;
+  padding:1.5pt 1.5pt 1.5pt 1.5pt;height:8.25pt'>
+  <p style='line-height:8.25pt'><span style='font-size:7.5pt;font-family:Arial'>EX</span></p>
+  </td>
+  <td width="32%" valign=bottom style='width:32.0%;border:inset black 1.0pt;
+  padding:1.5pt 1.5pt 1.5pt 1.5pt;height:8.25pt'>
+  <p style='line-height:8.25pt'><span style='font-size:7.5pt;font-family:Arial'>EXPIRED</span></p>
+  </td>
+  <td width="6%" valign=top style='width:6.0%;border:inset black 1.0pt;
+  padding:1.5pt 1.5pt 1.5pt 1.5pt;height:8.25pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt'>&nbsp;</span></p>
+  </td>
+  <td width="20%" valign=top style='width:20.0%;border:inset black 1.0pt;
+  padding:1.5pt 1.5pt 1.5pt 1.5pt;height:8.25pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt'>&nbsp;</span></p>
+  </td>
+  <td width="31%" valign=top style='width:31.0%;border:inset black 1.0pt;
+  padding:1.5pt 1.5pt 1.5pt 1.5pt;height:8.25pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style='height:5.25pt'>
+  <td width="12%" valign=bottom style='width:12.0%;border:inset black 1.0pt;
+  padding:1.5pt 1.5pt 1.5pt 1.5pt;height:5.25pt'>
+  <p><span style='font-size:7.5pt;font-family:Arial'>CA</span></p>
+  </td>
+  <td width="32%" valign=bottom style='width:32.0%;border:inset black 1.0pt;
+  padding:1.5pt 1.5pt 1.5pt 1.5pt;height:5.25pt'>
+  <p><span style='font-size:7.5pt;font-family:Arial'>CANCELED</span></p>
+  </td>
+  <td width="6%" valign=top style='width:6.0%;border:inset black 1.0pt;
+  padding:1.5pt 1.5pt 1.5pt 1.5pt;height:5.25pt'>
+  <p class=MsoNormal><span style='font-size:5.0pt'>&nbsp;</span></p>
+  </td>
+  <td width="20%" valign=top style='width:20.0%;border:inset black 1.0pt;
+  padding:1.5pt 1.5pt 1.5pt 1.5pt;height:5.25pt'>
+  <p class=MsoNormal><span style='font-size:5.0pt'>&nbsp;</span></p>
+  </td>
+  <td width="31%" valign=top style='width:31.0%;border:inset black 1.0pt;
+  padding:1.5pt 1.5pt 1.5pt 1.5pt;height:5.25pt'>
+  <p class=MsoNormal><span style='font-size:5.0pt'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style='height:3.75pt'>
+  <td width="12%" valign=bottom style='width:12.0%;border:inset black 1.0pt;
+  padding:1.5pt 1.5pt 1.5pt 1.5pt;height:3.75pt'>
+  <p><span style='font-size:7.5pt;font-family:Arial'>AC</span></p>
+  </td>
+  <td width="32%" valign=bottom style='width:32.0%;border:inset black 1.0pt;
+  padding:1.5pt 1.5pt 1.5pt 1.5pt;height:3.75pt'>
+  <p><span style='font-size:7.5pt;font-family:Arial'>ACTIVE</span></p>
+  </td>
+  <td width="6%" valign=top style='width:6.0%;border:inset black 1.0pt;
+  padding:1.5pt 1.5pt 1.5pt 1.5pt;height:3.75pt'>
+  <p class=MsoNormal><span style='font-size:4.0pt'>&nbsp;</span></p>
+  </td>
+  <td width="20%" valign=top style='width:20.0%;border:inset black 1.0pt;
+  padding:1.5pt 1.5pt 1.5pt 1.5pt;height:3.75pt'>
+  <p class=MsoNormal><span style='font-size:4.0pt'>&nbsp;</span></p>
+  </td>
+  <td width="31%" valign=top style='width:31.0%;border:inset black 1.0pt;
+  padding:1.5pt 1.5pt 1.5pt 1.5pt;height:3.75pt'>
+  <p class=MsoNormal><span style='font-size:4.0pt'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style='height:3.75pt'>
+  <td width="12%" valign=bottom style='width:12.0%;border:inset black 1.0pt;
+  padding:1.5pt 1.5pt 1.5pt 1.5pt;height:3.75pt'>
+  <p><span style='font-size:7.5pt;font-family:Arial'>PA</span></p>
+  </td>
+  <td width="32%" valign=bottom style='width:32.0%;border:inset black 1.0pt;
+  padding:1.5pt 1.5pt 1.5pt 1.5pt;height:3.75pt'>
+  <p><span style='font-size:7.5pt;font-family:Arial'>PLUGGED &amp; ABANDONED</span></p>
+  </td>
+  <td width="6%" valign=top style='width:6.0%;border:inset black 1.0pt;
+  padding:1.5pt 1.5pt 1.5pt 1.5pt;height:3.75pt'>
+  <p class=MsoNormal><span style='font-size:4.0pt'>&nbsp;</span></p>
+  </td>
+  <td width="20%" valign=top style='width:20.0%;border:inset black 1.0pt;
+  padding:1.5pt 1.5pt 1.5pt 1.5pt;height:3.75pt'>
+  <p class=MsoNormal><span style='font-size:4.0pt'>&nbsp;</span></p>
+  </td>
+  <td width="31%" valign=top style='width:31.0%;border:inset black 1.0pt;
+  padding:1.5pt 1.5pt 1.5pt 1.5pt;height:3.75pt'>
+  <p class=MsoNormal><span style='font-size:4.0pt'>&nbsp;</span></p>
+  </td>
+ </tr>
+</table>
+
+<p align=center style='text-align:center'><b><span style='font-size:10.0pt'>POSSIBLE
+COMBINATIONS OF OG_STATUS AND PERMIT STATUS</span></b></p>
+
+<table class=MsoNormalTable border=1 cellspacing=1 cellpadding=0 width=578
+ style='width:433.5pt;border:outset black 1.0pt'>
+ <tr style='height:9.75pt'>
+  <td width="13%" valign=bottom style='width:13.0%;border:inset black 1.0pt;
+  padding:1.5pt 1.5pt 1.5pt 1.5pt;height:9.75pt'>
+  <p align=center style='text-align:center;line-height:9.75pt'><b><span
+  style='font-size:7.5pt;font-family:Arial'>STATUS</span></b></p>
+  </td>
+  <td width="26%" valign=bottom style='width:26.0%;border:inset black 1.0pt;
+  padding:1.5pt 1.5pt 1.5pt 1.5pt;height:9.75pt'>
+  <p align=center style='text-align:center;line-height:9.75pt'><b><span
+  style='font-size:7.5pt;font-family:Arial'>PERM_STATUS</span></b></p>
+  </td>
+  <td width="61%" valign=top style='width:61.0%;border:inset black 1.0pt;
+  padding:1.5pt 1.5pt 1.5pt 1.5pt;height:9.75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style='height:6.75pt'>
+  <td width="13%" valign=bottom style='width:13.0%;border:inset black 1.0pt;
+  padding:1.5pt 1.5pt 1.5pt 1.5pt;height:6.75pt'>
+  <p align=center style='text-align:center'><span style='font-size:7.5pt;
+  font-family:Arial'>UN</span></p>
+  </td>
+  <td width="26%" valign=top style='width:26.0%;border:inset black 1.0pt;
+  padding:1.5pt 1.5pt 1.5pt 1.5pt;height:6.75pt'>
+  <p align=center style='text-align:center'><span style='font-size:7.5pt;
+  font-family:Arial'>NULL</span></p>
+  </td>
+  <td width="61%" valign=top style='width:61.0%;border:inset black 1.0pt;
+  padding:1.5pt 1.5pt 1.5pt 1.5pt;height:6.75pt'>
+  <p><span style='font-size:7.5pt;font-family:Arial'>No permit, spud,
+  completion or plug date</span></p>
+  </td>
+ </tr>
+ <tr style='height:6.0pt'>
+  <td width="13%" valign=top style='width:13.0%;border:inset black 1.0pt;
+  padding:1.5pt 1.5pt 1.5pt 1.5pt;height:6.0pt'>
+  <p align=center style='text-align:center'><span style='font-size:7.5pt;
+  font-family:Arial'>UN</span></p>
+  </td>
+  <td width="26%" valign=top style='width:26.0%;border:inset black 1.0pt;
+  padding:1.5pt 1.5pt 1.5pt 1.5pt;height:6.0pt'>
+  <p align=center style='text-align:center'><span style='font-size:7.5pt;
+  font-family:Arial'>NULL</span></p>
+  </td>
+  <td width="61%" valign=top style='width:61.0%;border:inset black 1.0pt;
+  padding:1.5pt 1.5pt 1.5pt 1.5pt;height:6.0pt'>
+  <p><span style='font-size:7.5pt;font-family:Arial'>OR has plugging
+  information with no Plugging_Comp_Date</span></p>
+  </td>
+ </tr>
+ <tr style='height:4.5pt'>
+  <td width="13%" valign=top style='width:13.0%;border:inset black 1.0pt;
+  padding:1.5pt 1.5pt 1.5pt 1.5pt;height:4.5pt'>
+  <p align=center style='text-align:center'><span style='font-size:7.5pt;
+  font-family:Arial'>UN</span></p>
+  </td>
+  <td width="26%" valign=top style='width:26.0%;border:inset black 1.0pt;
+  padding:1.5pt 1.5pt 1.5pt 1.5pt;height:4.5pt'>
+  <p align=center style='text-align:center'><span style='font-size:7.5pt;
+  font-family:Arial'>P</span></p>
+  </td>
+  <td width="61%" valign=top style='width:61.0%;border:inset black 1.0pt;
+  padding:1.5pt 1.5pt 1.5pt 1.5pt;height:4.5pt'>
+  <p><span style='font-size:7.5pt;font-family:Arial'>has plugging information
+  with no Plugging_Comp_Date, permit pending</span></p>
+  </td>
+ </tr>
+ <tr style='height:3.75pt'>
+  <td width="13%" valign=top style='width:13.0%;border:inset black 1.0pt;
+  padding:1.5pt 1.5pt 1.5pt 1.5pt;height:3.75pt'>
+  <p align=center style='text-align:center'><span style='font-size:7.5pt;
+  font-family:Arial'>ND</span></p>
+  </td>
+  <td width="26%" valign=top style='width:26.0%;border:inset black 1.0pt;
+  padding:1.5pt 1.5pt 1.5pt 1.5pt;height:3.75pt'>
+  <p align=center style='text-align:center'><span style='font-size:7.5pt;
+  font-family:Arial'>P</span></p>
+  </td>
+  <td width="61%" valign=top style='width:61.0%;border:inset black 1.0pt;
+  padding:1.5pt 1.5pt 1.5pt 1.5pt;height:3.75pt'>
+  <p><span style='font-size:7.5pt;font-family:Arial'>No spud, completion or
+  plug date pending permit</span></p>
+  </td>
+ </tr>
+ <tr style='height:6.75pt'>
+  <td width="13%" valign=top style='width:13.0%;border:inset black 1.0pt;
+  padding:1.5pt 1.5pt 1.5pt 1.5pt;height:6.75pt'>
+  <p align=center style='text-align:center'><span style='font-size:7.5pt;
+  font-family:Arial'>EX</span></p>
+  </td>
+  <td width="26%" valign=top style='width:26.0%;border:inset black 1.0pt;
+  padding:1.5pt 1.5pt 1.5pt 1.5pt;height:6.75pt'>
+  <p align=center style='text-align:center'><span style='font-size:7.5pt;
+  font-family:Arial'>E</span></p>
+  </td>
+  <td width="61%" valign=top style='width:61.0%;border:inset black 1.0pt;
+  padding:1.5pt 1.5pt 1.5pt 1.5pt;height:6.75pt'>
+  <p><span style='font-size:7.5pt;font-family:Arial'>No spud, completion or
+  plug date expired permit</span></p>
+  </td>
+ </tr>
+ <tr style='height:6.75pt'>
+  <td width="13%" valign=top style='width:13.0%;border:inset black 1.0pt;
+  padding:1.5pt 1.5pt 1.5pt 1.5pt;height:6.75pt'>
+  <p align=center style='text-align:center'><span style='font-size:7.5pt;
+  font-family:Arial'>CA</span></p>
+  </td>
+  <td width="26%" valign=top style='width:26.0%;border:inset black 1.0pt;
+  padding:1.5pt 1.5pt 1.5pt 1.5pt;height:6.75pt'>
+  <p align=center style='text-align:center'><span style='font-size:7.5pt;
+  font-family:Arial'>C</span></p>
+  </td>
+  <td width="61%" valign=top style='width:61.0%;border:inset black 1.0pt;
+  padding:1.5pt 1.5pt 1.5pt 1.5pt;height:6.75pt'>
+  <p><span style='font-size:7.5pt;font-family:Arial'>No spud, completion or
+  plug date canceled permit</span></p>
+  </td>
+ </tr>
+ <tr style='height:6.0pt'>
+  <td width="13%" valign=top style='width:13.0%;border:inset black 1.0pt;
+  padding:1.5pt 1.5pt 1.5pt 1.5pt;height:6.0pt'>
+  <p align=center style='text-align:center'><span style='font-size:7.5pt;
+  font-family:Arial'>SP</span></p>
+  </td>
+  <td width="26%" valign=top style='width:26.0%;border:inset black 1.0pt;
+  padding:1.5pt 1.5pt 1.5pt 1.5pt;height:6.0pt'>
+  <p align=center style='text-align:center'><span style='font-size:7.5pt;
+  font-family:Arial'>NULL</span></p>
+  </td>
+  <td width="61%" valign=top style='width:61.0%;border:inset black 1.0pt;
+  padding:1.5pt 1.5pt 1.5pt 1.5pt;height:6.0pt'>
+  <p><span style='font-size:7.5pt;font-family:Arial'>Spud date &gt; completion
+  or plug date </span></p>
+  </td>
+ </tr>
+ <tr style='height:9.0pt'>
+  <td width="13%" valign=top style='width:13.0%;border:inset black 1.0pt;
+  padding:1.5pt 1.5pt 1.5pt 1.5pt;height:9.0pt'>
+  <p align=center style='text-align:center;line-height:9.0pt'><span
+  style='font-size:7.5pt;font-family:Arial'>AC</span></p>
+  </td>
+  <td width="26%" valign=top style='width:26.0%;border:inset black 1.0pt;
+  padding:1.5pt 1.5pt 1.5pt 1.5pt;height:9.0pt'>
+  <p align=center style='text-align:center;line-height:9.0pt'><span
+  style='font-size:7.5pt;font-family:Arial'>NULL</span></p>
+  </td>
+  <td width="61%" valign=top style='width:61.0%;border:inset black 1.0pt;
+  padding:1.5pt 1.5pt 1.5pt 1.5pt;height:9.0pt'>
+  <p style='line-height:9.0pt'><span style='font-size:7.5pt;font-family:Arial'>Active
+  well with no permit or completion date &gt; permit date</span></p>
+  </td>
+ </tr>
+ <tr style='height:8.25pt'>
+  <td width="13%" valign=top style='width:13.0%;border:inset black 1.0pt;
+  padding:1.5pt 1.5pt 1.5pt 1.5pt;height:8.25pt'>
+  <p align=center style='text-align:center;line-height:8.25pt'><span
+  style='font-size:7.5pt;font-family:Arial'>AC</span></p>
+  </td>
+  <td width="26%" valign=top style='width:26.0%;border:inset black 1.0pt;
+  padding:1.5pt 1.5pt 1.5pt 1.5pt;height:8.25pt'>
+  <p align=center style='text-align:center;line-height:8.25pt'><span
+  style='font-size:7.5pt;font-family:Arial'>P</span></p>
+  </td>
+  <td width="61%" valign=top style='width:61.0%;border:inset black 1.0pt;
+  padding:1.5pt 1.5pt 1.5pt 1.5pt;height:8.25pt'>
+  <p style='line-height:8.25pt'><span style='font-size:7.5pt;font-family:Arial'>Active
+  well with pending permit</span></p>
+  </td>
+ </tr>
+ <tr style='height:6.75pt'>
+  <td width="13%" valign=top style='width:13.0%;border:inset black 1.0pt;
+  padding:1.5pt 1.5pt 1.5pt 1.5pt;height:6.75pt'>
+  <p align=center style='text-align:center'><span style='font-size:7.5pt;
+  font-family:Arial'>AC</span></p>
+  </td>
+  <td width="26%" valign=top style='width:26.0%;border:inset black 1.0pt;
+  padding:1.5pt 1.5pt 1.5pt 1.5pt;height:6.75pt'>
+  <p align=center style='text-align:center'><span style='font-size:7.5pt;
+  font-family:Arial'>E</span></p>
+  </td>
+  <td width="61%" valign=top style='width:61.0%;border:inset black 1.0pt;
+  padding:1.5pt 1.5pt 1.5pt 1.5pt;height:6.75pt'>
+  <p><span style='font-size:7.5pt;font-family:Arial'>Active well with expired
+  permit approved after completion date</span></p>
+  </td>
+ </tr>
+ <tr style='height:6.0pt'>
+  <td width="13%" valign=top style='width:13.0%;border:inset black 1.0pt;
+  padding:1.5pt 1.5pt 1.5pt 1.5pt;height:6.0pt'>
+  <p align=center style='text-align:center'><span style='font-size:7.5pt;
+  font-family:Arial'>PA</span></p>
+  </td>
+  <td width="26%" valign=top style='width:26.0%;border:inset black 1.0pt;
+  padding:1.5pt 1.5pt 1.5pt 1.5pt;height:6.0pt'>
+  <p align=center style='text-align:center'><span style='font-size:7.5pt;
+  font-family:Arial'>NULL</span></p>
+  </td>
+  <td width="61%" valign=top style='width:61.0%;border:inset black 1.0pt;
+  padding:1.5pt 1.5pt 1.5pt 1.5pt;height:6.0pt'>
+  <p><span style='font-size:7.5pt;font-family:Arial'>Plugged well with no
+  permit or plug date &gt; permit date</span></p>
+  </td>
+ </tr>
+ <tr style='height:4.5pt'>
+  <td width="13%" valign=top style='width:13.0%;border:inset black 1.0pt;
+  padding:1.5pt 1.5pt 1.5pt 1.5pt;height:4.5pt'>
+  <p align=center style='text-align:center'><span style='font-size:7.5pt;
+  font-family:Arial'>PA</span></p>
+  </td>
+  <td width="26%" valign=top style='width:26.0%;border:inset black 1.0pt;
+  padding:1.5pt 1.5pt 1.5pt 1.5pt;height:4.5pt'>
+  <p align=center style='text-align:center'><span style='font-size:7.5pt;
+  font-family:Arial'>P</span></p>
+  </td>
+  <td width="61%" valign=top style='width:61.0%;border:inset black 1.0pt;
+  padding:1.5pt 1.5pt 1.5pt 1.5pt;height:4.5pt'>
+  <p><span style='font-size:7.5pt;font-family:Arial'>Plugged well with pending
+  permit</span></p>
+  </td>
+ </tr>
+ <tr style='height:4.5pt'>
+  <td width="13%" valign=top style='width:13.0%;border:inset black 1.0pt;
+  padding:1.5pt 1.5pt 1.5pt 1.5pt;height:4.5pt'>
+  <p align=center style='text-align:center'><span style='font-size:7.5pt;
+  font-family:Arial'>PA</span></p>
+  </td>
+  <td width="26%" valign=top style='width:26.0%;border:inset black 1.0pt;
+  padding:1.5pt 1.5pt 1.5pt 1.5pt;height:4.5pt'>
+  <p align=center style='text-align:center'><span style='font-size:7.5pt;
+  font-family:Arial'>E</span></p>
+  </td>
+  <td width="61%" valign=top style='width:61.0%;border:inset black 1.0pt;
+  padding:1.5pt 1.5pt 1.5pt 1.5pt;height:4.5pt'>
+  <p><span style='font-size:7.5pt;font-family:Arial'>Plugged well with expired
+  permit approved after plugging date</span></p>
+  </td>
+ </tr>
+</table>
+
+<p><span style='font-size:10.0pt'>There is a rare occasion that a Well has a
+canceled status. This occurs when an intent to drill is canceled on a new drill
+(ND). In this case the OG Status will be &quot;CA&quot; and the Permit Status
+will be &quot;C&quot;.</span></p>
+
+<p><b><span style='font-size:18.0pt'>Search by Allowable Number </span></b></p>
+
+<p>Production information can be search by two ways, either by the Allowable information
+or basic well information (Api Number, Well Name, etc). A combination of Allowable
+Number and Well information cannot be used. When querying by Allowable Number
+use the <b>Search by Allowable Number</b> button to perform the query.</p>
+
+<p><img border=0 width=576 height=9
+src="line_blue.gif"></p>
+
+<p align=right style='text-align:right'><a href="#TableofContents">Back</a><a
+href="#TableofContents"><span style='text-decoration:none'><img border=0
+width=140 height=60
+src="button_blue.gif"></span></a></p>
+
+<p class=MsoNormal><a name=Conclusion><b><span style='font-size:18.0pt'>Conclusion</span></b></a></p>
+
+<p>The purpose of this documentation is to provide general instructions, terms,
+and definitions and to help navigate through the forms and get a general idea
+concerning the information presented. It is not a detailed explanation. It does
+not explain and was not intended to explain log types, unitization orders,
+commingled zones, or any details beyond the scope of simple online
+documentation. In some cases oversimplification can lead to inaccuracies.
+Therefore, please treat this document in the manner in which it was intended,
+which is simply to provide a general understanding of the information provided
+and to help in the retrieval of the information and the navigation of the
+forms. Any questions regarding some specific area of interest or concern should
+be directed to some person or persons whose focus or expertise lies in that
+area.</p>
+
+<p><img border=0 width=576 height=9
+src="line_blue.gif"></p>
+
+<p align=right style='text-align:right'><a href="#TableofContents">Back</a><a
+href="#TableofContents"><span style='text-decoration:none'><img border=0
+width=140 height=60
+src="button_blue.gif"></span></a></p>
+
+<p><a name=Fields><b><span style='font-size:18.0pt'>Explanation of Fields</span></b></a></p>
+
+<p>&nbsp;</p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=684
+ style='width:513.2pt'>
+ <tr style='height:9.25pt'>
+  <td width=42 valign=top style='width:31.7pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0in 1.5pt 0in 1.5pt;height:9.25pt'>
+  <h5>Form</h5>
+  </td>
+  <td width=72 valign=top style='width:.75in;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0in 1.5pt 0in 1.5pt;height:9.25pt'>
+  <h5>Tab</h5>
+  </td>
+  <td width=150 valign=top style='width:112.5pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0in 1.5pt 0in 1.5pt;height:9.25pt'>
+  <h5>Field Name</h5>
+  </td>
+  <td width=78 valign=top style='width:58.5pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0in 1.5pt 0in 1.5pt;height:9.25pt'>
+  <h5>Field Prompt</h5>
+  </td>
+  <td width=180 valign=top style='width:135.0pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0in 1.5pt 0in 1.5pt;height:9.25pt'>
+  <h5>Definition</h5>
+  </td>
+  <td width=162 valign=top style='width:121.5pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0in 1.5pt 0in 1.5pt;height:9.25pt'>
+  <h5>Allowable Values</h5>
+  </td>
+ </tr>
+ <tr style='height:8.4pt'>
+  <td width=42 valign=top style='width:31.7pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='margin-right:-15.25pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>Well
+  Query</span></p>
+  </td>
+  <td width=72 valign=top style='width:.75in;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>None</span></p>
+  </td>
+  <td width=150 valign=top style='width:112.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.2pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>OG_WELLS.RSLV_INDICATOR</span></p>
+  </td>
+  <td width=78 valign=top style='width:58.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.35pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>None</span></p>
+  </td>
+  <td width=180 valign=top style='width:135.0pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.25pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>Indicates
+  if Well is Resolved</span></p>
+  </td>
+  <td width=162 valign=top style='width:121.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>R</span></p>
+  </td>
+ </tr>
+ <tr style='height:8.4pt'>
+  <td width=42 valign=top style='width:31.7pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Well Query</span></p>
+  </td>
+  <td width=72 valign=top style='width:.75in;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>None</span></p>
+  </td>
+  <td width=150 valign=top style='width:112.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.2pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>OG_WELLS.WELL_CLASS</span></p>
+  </td>
+  <td width=78 valign=top style='width:58.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.35pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>Class</span></p>
+  </td>
+  <td width=180 valign=top style='width:135.0pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.25pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>Oil,
+  Gas, Injection, Salt Water Disposal</span></p>
+  </td>
+  <td width=162 valign=top style='width:121.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>OIL, GAS, INJ, SWD, ETC.</span></p>
+  </td>
+ </tr>
+ <tr style='height:8.4pt'>
+  <td width=42 valign=top style='width:31.7pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Well Query</span></p>
+  </td>
+  <td width=72 valign=top style='width:.75in;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>None</span></p>
+  </td>
+  <td width=150 valign=top style='width:112.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.2pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>OG_WELLS.STATUS</span></p>
+  </td>
+  <td width=78 valign=top style='width:58.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.35pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>OG</span></p>
+  </td>
+  <td width=180 valign=top style='width:135.0pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.25pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>Status
+  of Well</span></p>
+  </td>
+  <td width=162 valign=top style='width:121.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>UN, ND, SP, EX, AC, PA</span></p>
+  </td>
+ </tr>
+ <tr style='height:8.4pt'>
+  <td width=42 valign=top style='width:31.7pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Well Query</span></p>
+  </td>
+  <td width=72 valign=top style='width:.75in;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>None</span></p>
+  </td>
+  <td width=150 valign=top style='width:112.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.2pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>OG_WELLS.OPERSTATUS</span></p>
+  </td>
+  <td width=78 valign=top style='width:58.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.35pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>UIC</span></p>
+  </td>
+  <td width=180 valign=top style='width:135.0pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.25pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>Active,
+  Plugged, Terminated, Permit</span></p>
+  </td>
+  <td width=162 valign=top style='width:121.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>AC, PA, TM, PD</span></p>
+  </td>
+ </tr>
+ <tr style='height:8.4pt'>
+  <td width=42 valign=top style='width:31.7pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Well Query</span></p>
+  </td>
+  <td width=72 valign=top style='width:.75in;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>None</span></p>
+  </td>
+  <td width=150 valign=top style='width:112.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.2pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>OG_WELLS.PERM_STATUS</span></p>
+  </td>
+  <td width=78 valign=top style='width:58.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.35pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>ITD</span></p>
+  </td>
+  <td width=180 valign=top style='width:135.0pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.25pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>Status
+  of Permit - Pending or Expired</span></p>
+  </td>
+  <td width=162 valign=top style='width:121.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>P, E</span></p>
+  </td>
+ </tr>
+ <tr style='height:8.4pt'>
+  <td width=42 valign=top style='width:31.7pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Basic</span></p>
+  </td>
+  <td width=72 valign=top style='width:.75in;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Basic Well Info.</span></p>
+  </td>
+  <td width=150 valign=top style='width:112.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.2pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>OG_WELLS.RSLV_API_COUNTY</span></p>
+  </td>
+  <td width=78 valign=top style='width:58.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.35pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>API
+  Resolved to/From</span></p>
+  </td>
+  <td width=180 valign=top style='width:135.0pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.25pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>Displays
+  the API Number that it was resolvd to/from</span></p>
+  </td>
+  <td width=162 valign=top style='width:121.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Number</span></p>
+  </td>
+ </tr>
+ <tr style='height:8.4pt'>
+  <td width=42 valign=top style='width:31.7pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Basic</span></p>
+  </td>
+  <td width=72 valign=top style='width:.75in;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Basic Well Info.</span></p>
+  </td>
+  <td width=150 valign=top style='width:112.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.2pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>OG_WELLS.RSLV_API_NUMBER</span></p>
+  </td>
+  <td width=78 valign=top style='width:58.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.35pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>API
+  Resolved to/From</span></p>
+  </td>
+  <td width=180 valign=top style='width:135.0pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.25pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>Displays
+  the API Number that it was resolvd to/from</span></p>
+  </td>
+  <td width=162 valign=top style='width:121.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Number</span></p>
+  </td>
+ </tr>
+ <tr style='height:8.4pt'>
+  <td width=42 valign=top style='width:31.7pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Basic</span></p>
+  </td>
+  <td width=72 valign=top style='width:.75in;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Basic Well Info.</span></p>
+  </td>
+  <td width=150 valign=top style='width:112.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.2pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>OG_WELLS.CURRENT_OPER_EFF</span></p>
+  </td>
+  <td width=78 valign=top style='width:58.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.35pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>Effective
+  Date</span></p>
+  </td>
+  <td width=180 valign=top style='width:135.0pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.25pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>Date
+  the current operator became effective</span></p>
+  </td>
+  <td width=162 valign=top style='width:121.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Date</span></p>
+  </td>
+ </tr>
+ <tr style='height:8.4pt'>
+  <td width=42 valign=top style='width:31.7pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Basic</span></p>
+  </td>
+  <td width=72 valign=top style='width:.75in;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Basic Well Info.</span></p>
+  </td>
+  <td width=150 valign=top style='width:112.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.2pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>OG_WELLS.CALC_LATLONG</span></p>
+  </td>
+  <td width=78 valign=top style='width:58.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.35pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>Calculated</span></p>
+  </td>
+  <td width=180 valign=top style='width:135.0pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.25pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>Was
+  Lat/Long Calculated or were exact Coordinates known</span></p>
+  </td>
+  <td width=162 valign=top style='width:121.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Yes or No</span></p>
+  </td>
+ </tr>
+ <tr style='height:8.4pt'>
+  <td width=42 valign=top style='width:31.7pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Basic</span></p>
+  </td>
+  <td width=72 valign=top style='width:.75in;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Basic Well Info.</span></p>
+  </td>
+  <td width=150 valign=top style='width:112.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.2pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>OG_WELLS.OTC_COUNTY</span></p>
+  </td>
+  <td width=78 valign=top style='width:58.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.35pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>OTC
+  Prod Unit</span></p>
+  </td>
+  <td width=180 valign=top style='width:135.0pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.25pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>Number
+  assigned by Oklahoma Tax Commission</span></p>
+  </td>
+  <td width=162 valign=top style='width:121.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Number</span></p>
+  </td>
+ </tr>
+ <tr style='height:8.4pt'>
+  <td width=42 valign=top style='width:31.7pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Basic</span></p>
+  </td>
+  <td width=72 valign=top style='width:.75in;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Basic Well Info.</span></p>
+  </td>
+  <td width=150 valign=top style='width:112.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.2pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>OG_WELLS.OTC_LEASE_NO</span></p>
+  </td>
+  <td width=78 valign=top style='width:58.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.35pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>OTC
+  Prod Unit</span></p>
+  </td>
+  <td width=180 valign=top style='width:135.0pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.25pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>Number
+  assigned by Oklahoma Tax Commission</span></p>
+  </td>
+  <td width=162 valign=top style='width:121.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Number</span></p>
+  </td>
+ </tr>
+ <tr style='height:8.4pt'>
+  <td width=42 valign=top style='width:31.7pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Basic</span></p>
+  </td>
+  <td width=72 valign=top style='width:.75in;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Basic Well Info.</span></p>
+  </td>
+  <td width=150 valign=top style='width:112.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.2pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>OG_WELLS.OTC_SUB_NO</span></p>
+  </td>
+  <td width=78 valign=top style='width:58.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.35pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>OTC
+  Prod Unit</span></p>
+  </td>
+  <td width=180 valign=top style='width:135.0pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.25pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>Number
+  assigned by Oklahoma Tax Commission</span></p>
+  </td>
+  <td width=162 valign=top style='width:121.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Number</span></p>
+  </td>
+ </tr>
+ <tr style='height:8.4pt'>
+  <td width=42 valign=top style='width:31.7pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Basic</span></p>
+  </td>
+  <td width=72 valign=top style='width:.75in;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Basic Well Info.</span></p>
+  </td>
+  <td width=150 valign=top style='width:112.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.2pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>OG_WELLS.ELEVATION</span></p>
+  </td>
+  <td width=78 valign=top style='width:58.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.35pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>Elevation</span></p>
+  </td>
+  <td width=180 valign=top style='width:135.0pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.25pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>Ground
+  Elevation</span></p>
+  </td>
+  <td width=162 valign=top style='width:121.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Number</span></p>
+  </td>
+ </tr>
+ <tr style='height:8.4pt'>
+  <td width=42 valign=top style='width:31.7pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Basic</span></p>
+  </td>
+  <td width=72 valign=top style='width:.75in;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Basic Well Info.</span></p>
+  </td>
+  <td width=150 valign=top style='width:112.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.2pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>OG_WELLS.STATE_LEASE</span></p>
+  </td>
+  <td width=78 valign=top style='width:58.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.35pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>State
+  Lease</span></p>
+  </td>
+  <td width=180 valign=top style='width:135.0pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.25pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>Is
+  the Well located on State Leased land</span></p>
+  </td>
+  <td width=162 valign=top style='width:121.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Yes or No</span></p>
+  </td>
+ </tr>
+ <tr style='height:8.4pt'>
+  <td width=42 valign=top style='width:31.7pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Basic</span></p>
+  </td>
+  <td width=72 valign=top style='width:.75in;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Basic Well Info.</span></p>
+  </td>
+  <td width=150 valign=top style='width:112.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.2pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>OG_WELLS.ERROR_IND</span></p>
+  </td>
+  <td width=78 valign=top style='width:58.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.35pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>Source
+  Code</span></p>
+  </td>
+  <td width=180 valign=top style='width:135.0pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=162 valign=top style='width:121.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style='height:8.4pt'>
+  <td width=42 valign=top style='width:31.7pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Basic</span></p>
+  </td>
+  <td width=72 valign=top style='width:.75in;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Basic Well Info.</span></p>
+  </td>
+  <td width=150 valign=top style='width:112.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.2pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>OG_WELLS.FEDERAL_GOV</span></p>
+  </td>
+  <td width=78 valign=top style='width:58.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.35pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>Federal
+  Gov.</span></p>
+  </td>
+  <td width=180 valign=top style='width:135.0pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.25pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>Is
+  the Well located on Federal Leased land</span></p>
+  </td>
+  <td width=162 valign=top style='width:121.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Yes or No</span></p>
+  </td>
+ </tr>
+ <tr style='height:8.4pt'>
+  <td width=42 valign=top style='width:31.7pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Basic</span></p>
+  </td>
+  <td width=72 valign=top style='width:.75in;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Basic Well Info.</span></p>
+  </td>
+  <td width=150 valign=top style='width:112.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.2pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>OG_WELLS.TRANS_ID</span></p>
+  </td>
+  <td width=78 valign=top style='width:58.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.35pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>Transaction
+  ID</span></p>
+  </td>
+  <td width=180 valign=top style='width:135.0pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.25pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>Transaction
+  ID from OG_Online </span></p>
+  </td>
+  <td width=162 valign=top style='width:121.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>OGEO, OGQV, ETC.</span></p>
+  </td>
+ </tr>
+ <tr style='height:8.4pt'>
+  <td width=42 valign=top style='width:31.7pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Basic</span></p>
+  </td>
+  <td width=72 valign=top style='width:.75in;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Current Oper. Info.</span></p>
+  </td>
+  <td width=150 valign=top style='width:112.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.2pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>COM_OPERBRWS.XFR_HIST</span></p>
+  </td>
+  <td width=78 valign=top style='width:58.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.35pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>Transfer
+  to History</span></p>
+  </td>
+  <td width=180 valign=top style='width:135.0pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.25pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>Has
+  this operator been transferred to history?</span></p>
+  </td>
+  <td width=162 valign=top style='width:121.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Yes or No</span></p>
+  </td>
+ </tr>
+ <tr style='height:8.4pt'>
+  <td width=42 valign=top style='width:31.7pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Basic</span></p>
+  </td>
+  <td width=72 valign=top style='width:.75in;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Current Oper. Info.</span></p>
+  </td>
+  <td width=150 valign=top style='width:112.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.2pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>COM_OPERBRWS.PURCHASER_IND</span></p>
+  </td>
+  <td width=78 valign=top style='width:58.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.35pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>Purchaser</span></p>
+  </td>
+  <td width=180 valign=top style='width:135.0pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.25pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>Is
+  this company a purchaser</span></p>
+  </td>
+  <td width=162 valign=top style='width:121.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Yes or No</span></p>
+  </td>
+ </tr>
+ <tr style='height:8.4pt'>
+  <td width=42 valign=top style='width:31.7pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Basic</span></p>
+  </td>
+  <td width=72 valign=top style='width:.75in;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Current Oper. Info.</span></p>
+  </td>
+  <td width=150 valign=top style='width:112.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.2pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>COM_OPERBRWS.SURETY_TYPE</span></p>
+  </td>
+  <td width=78 valign=top style='width:58.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.35pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>Surety
+  Type</span></p>
+  </td>
+  <td width=180 valign=top style='width:135.0pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.25pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>Bond,
+  CD, Financial Statement, Letter of Credit</span></p>
+  </td>
+  <td width=162 valign=top style='width:121.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>BND, CC, CD, FS, LC</span></p>
+  </td>
+ </tr>
+ <tr style='height:8.4pt'>
+  <td width=42 valign=top style='width:31.7pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Basic</span></p>
+  </td>
+  <td width=72 valign=top style='width:.75in;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Current Oper. Info.</span></p>
+  </td>
+  <td width=150 valign=top style='width:112.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.2pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>COM_OPERBRWS.AGR_PLUG_FDATE</span></p>
+  </td>
+  <td width=78 valign=top style='width:58.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.35pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>Agree
+  to Plug</span></p>
+  </td>
+  <td width=180 valign=top style='width:135.0pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.25pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>The
+  date the operator has agreed to plug the well</span></p>
+  </td>
+  <td width=162 valign=top style='width:121.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Date</span></p>
+  </td>
+ </tr>
+ <tr style='height:8.4pt'>
+  <td width=42 valign=top style='width:31.7pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Prev. Oper.</span></p>
+  </td>
+  <td width=72 valign=top style='width:.75in;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>None</span></p>
+  </td>
+  <td width=150 valign=top style='width:112.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.2pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>OG_PREV_OPERS.EFFECTIVE_DATE</span></p>
+  </td>
+  <td width=78 valign=top style='width:58.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.35pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>Effective
+  Date</span></p>
+  </td>
+  <td width=180 valign=top style='width:135.0pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.25pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>The
+  date the previous operator became effective</span></p>
+  </td>
+  <td width=162 valign=top style='width:121.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Date</span></p>
+  </td>
+ </tr>
+ <tr style='height:8.4pt'>
+  <td width=42 valign=top style='width:31.7pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Prev. Oper.</span></p>
+  </td>
+  <td width=72 valign=top style='width:.75in;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>None</span></p>
+  </td>
+  <td width=150 valign=top style='width:112.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.2pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>OG_PREV_OPERS.LETTER_SENT</span></p>
+  </td>
+  <td width=78 valign=top style='width:58.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.35pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>Letter
+  Sent</span></p>
+  </td>
+  <td width=180 valign=top style='width:135.0pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.25pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>The
+  date that a ??? Letter was sent</span></p>
+  </td>
+  <td width=162 valign=top style='width:121.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Date</span></p>
+  </td>
+ </tr>
+ <tr style='height:8.4pt'>
+  <td width=42 valign=top style='width:31.7pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Permits</span></p>
+  </td>
+  <td width=72 valign=top style='width:.75in;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Basic</span></p>
+  </td>
+  <td width=150 valign=top style='width:112.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.2pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>OG_PERMITS.BATCH_ID_DATE</span></p>
+  </td>
+  <td width=78 valign=top style='width:58.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.35pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>Batch
+  ID</span></p>
+  </td>
+  <td width=180 valign=top style='width:135.0pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.25pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>The
+  assigned date of when the permit was received</span></p>
+  </td>
+  <td width=162 valign=top style='width:121.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Date</span></p>
+  </td>
+ </tr>
+ <tr style='height:8.4pt'>
+  <td width=42 valign=top style='width:31.7pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Permits</span></p>
+  </td>
+  <td width=72 valign=top style='width:.75in;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Basic</span></p>
+  </td>
+  <td width=150 valign=top style='width:112.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.2pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>OG_PERMITS.BATCH_ID_NUMBER</span></p>
+  </td>
+  <td width=78 valign=top style='width:58.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.35pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>Batch
+  ID</span></p>
+  </td>
+  <td width=180 valign=top style='width:135.0pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.25pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>The
+  assigned number of when the permit was received</span></p>
+  </td>
+  <td width=162 valign=top style='width:121.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Number</span></p>
+  </td>
+ </tr>
+ <tr style='height:8.4pt'>
+  <td width=42 valign=top style='width:31.7pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Permits</span></p>
+  </td>
+  <td width=72 valign=top style='width:.75in;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Basic</span></p>
+  </td>
+  <td width=150 valign=top style='width:112.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.2pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>OG_PERMITS.FEET_LEASE</span></p>
+  </td>
+  <td width=78 valign=top style='width:58.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.35pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>Feet
+  From Nearest Line</span></p>
+  </td>
+  <td width=180 valign=top style='width:135.0pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.25pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>Feet
+  From the Nearest lease line.</span></p>
+  </td>
+  <td width=162 valign=top style='width:121.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Number</span></p>
+  </td>
+ </tr>
+ <tr style='height:8.4pt'>
+  <td width=42 valign=top style='width:31.7pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Permits</span></p>
+  </td>
+  <td width=72 valign=top style='width:.75in;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Basic</span></p>
+  </td>
+  <td width=150 valign=top style='width:112.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.2pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>OG_PERMITS.AMEND_REASON</span></p>
+  </td>
+  <td width=78 valign=top style='width:58.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.35pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>Amend
+  Reason</span></p>
+  </td>
+  <td width=180 valign=top style='width:135.0pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.25pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>A
+  reason for amending the permit.</span></p>
+  </td>
+  <td width=162 valign=top style='width:121.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style='height:8.4pt'>
+  <td width=42 valign=top style='width:31.7pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Permits</span></p>
+  </td>
+  <td width=72 valign=top style='width:.75in;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Basic</span></p>
+  </td>
+  <td width=150 valign=top style='width:112.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.2pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>OG_PERMITS.DRLG_TYPE</span></p>
+  </td>
+  <td width=78 valign=top style='width:58.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.35pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>Drlg
+  Type</span></p>
+  </td>
+  <td width=180 valign=top style='width:135.0pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.25pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>Straight
+  Hole, Directional Hole, Horizontal Hole</span></p>
+  </td>
+  <td width=162 valign=top style='width:121.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>SH, DH. HH</span></p>
+  </td>
+ </tr>
+ <tr style='height:8.4pt'>
+  <td width=42 valign=top style='width:31.7pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Permits</span></p>
+  </td>
+  <td width=72 valign=top style='width:.75in;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Basic</span></p>
+  </td>
+  <td width=150 valign=top style='width:112.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.2pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>OG_PERMITS.SURF_CSG_DEPTH</span></p>
+  </td>
+  <td width=78 valign=top style='width:58.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.35pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>Surf
+  Csg Depth</span></p>
+  </td>
+  <td width=180 valign=top style='width:135.0pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.25pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>Surface
+  Casing Depth</span></p>
+  </td>
+  <td width=162 valign=top style='width:121.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Number</span></p>
+  </td>
+ </tr>
+ <tr style='height:8.4pt'>
+  <td width=42 valign=top style='width:31.7pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Permits</span></p>
+  </td>
+  <td width=72 valign=top style='width:.75in;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Basic</span></p>
+  </td>
+  <td width=150 valign=top style='width:112.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.2pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>OG_PERMITS.STG_COL_DEPTH</span></p>
+  </td>
+  <td width=78 valign=top style='width:58.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.35pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>Stage
+  Col Depth</span></p>
+  </td>
+  <td width=180 valign=top style='width:135.0pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.25pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>Stage
+  Collar Depth - If two stage cement job.</span></p>
+  </td>
+  <td width=162 valign=top style='width:121.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Number</span></p>
+  </td>
+ </tr>
+ <tr style='height:8.4pt'>
+  <td width=42 valign=top style='width:31.7pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Permits</span></p>
+  </td>
+  <td width=72 valign=top style='width:.75in;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Basic</span></p>
+  </td>
+  <td width=150 valign=top style='width:112.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.2pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>OG_PERMITS.DEPTH_BASE</span></p>
+  </td>
+  <td width=78 valign=top style='width:58.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.35pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>Depth
+  to Base TW</span></p>
+  </td>
+  <td width=180 valign=top style='width:135.0pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.25pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>Depth
+  to base of treatable water</span></p>
+  </td>
+  <td width=162 valign=top style='width:121.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Number</span></p>
+  </td>
+ </tr>
+ <tr style='height:8.4pt'>
+  <td width=42 valign=top style='width:31.7pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Permits</span></p>
+  </td>
+  <td width=72 valign=top style='width:.75in;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Basic</span></p>
+  </td>
+  <td width=150 valign=top style='width:112.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.2pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>OG_PERMITS.SURFACE_WATER</span></p>
+  </td>
+  <td width=78 valign=top style='width:58.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.35pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>Surface
+  Water</span></p>
+  </td>
+  <td width=180 valign=top style='width:135.0pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.25pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>Will
+  surface water be used?</span></p>
+  </td>
+  <td width=162 valign=top style='width:121.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Yes or No</span></p>
+  </td>
+ </tr>
+ <tr style='height:8.4pt'>
+  <td width=42 valign=top style='width:31.7pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Permits</span></p>
+  </td>
+  <td width=72 valign=top style='width:.75in;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Basic</span></p>
+  </td>
+  <td width=150 valign=top style='width:112.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.2pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>OG_PERMITS.WATER_WELL</span></p>
+  </td>
+  <td width=78 valign=top style='width:58.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.35pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>Water
+  Well</span></p>
+  </td>
+  <td width=180 valign=top style='width:135.0pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.25pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>Will
+  a water well be drilled?</span></p>
+  </td>
+  <td width=162 valign=top style='width:121.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Yes or No</span></p>
+  </td>
+ </tr>
+ <tr style='height:8.4pt'>
+  <td width=42 valign=top style='width:31.7pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Permits</span></p>
+  </td>
+  <td width=72 valign=top style='width:.75in;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Basic</span></p>
+  </td>
+  <td width=150 valign=top style='width:112.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.2pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>OG_PERMITS.DEEP_SURF_CSG</span></p>
+  </td>
+  <td width=78 valign=top style='width:58.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.35pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>Deep
+  Surf Csg</span></p>
+  </td>
+  <td width=180 valign=top style='width:135.0pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.25pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>Has
+  surface casing waiver been sent in?</span></p>
+  </td>
+  <td width=162 valign=top style='width:121.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Yes or No</span></p>
+  </td>
+ </tr>
+ <tr style='height:8.4pt'>
+  <td width=42 valign=top style='width:31.7pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Permits</span></p>
+  </td>
+  <td width=72 valign=top style='width:.75in;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Basic</span></p>
+  </td>
+  <td width=150 valign=top style='width:112.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.2pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>OG_PERMITS.ALT_CSG_DESIGN</span></p>
+  </td>
+  <td width=78 valign=top style='width:58.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.35pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>Alt
+  Csg Design</span></p>
+  </td>
+  <td width=180 valign=top style='width:135.0pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.25pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>Alternate
+  Casing Design</span></p>
+  </td>
+  <td width=162 valign=top style='width:121.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Yes or No</span></p>
+  </td>
+ </tr>
+ <tr style='height:8.4pt'>
+  <td width=42 valign=top style='width:31.7pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Permits</span></p>
+  </td>
+  <td width=72 valign=top style='width:.75in;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Basic</span></p>
+  </td>
+  <td width=150 valign=top style='width:112.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.2pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>OG_PERMITS.PBTD</span></p>
+  </td>
+  <td width=78 valign=top style='width:58.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.35pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>PBTD</span></p>
+  </td>
+  <td width=180 valign=top style='width:135.0pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.25pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>Plugged
+  Back Total Depth</span></p>
+  </td>
+  <td width=162 valign=top style='width:121.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Number</span></p>
+  </td>
+ </tr>
+ <tr style='height:8.4pt'>
+  <td width=42 valign=top style='width:31.7pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Permits</span></p>
+  </td>
+  <td width=72 valign=top style='width:.75in;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Pits/Mud</span></p>
+  </td>
+  <td width=150 valign=top style='width:112.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.2pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>OG_PERMITS.MUD_TYPE</span></p>
+  </td>
+  <td width=78 valign=top style='width:58.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.35pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>Mud
+  Type</span></p>
+  </td>
+  <td width=180 valign=top style='width:135.0pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.25pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>Type
+  of Drilling Mud Used</span></p>
+  </td>
+  <td width=162 valign=top style='width:121.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Water Based, Oil Based,
+  Gas Based</span></p>
+  </td>
+ </tr>
+ <tr style='height:8.4pt'>
+  <td width=42 valign=top style='width:31.7pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Permits</span></p>
+  </td>
+  <td width=72 valign=top style='width:.75in;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Pits/Mud</span></p>
+  </td>
+  <td width=150 valign=top style='width:112.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.2pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>OG_PERMITS.SURFACE_TYPE</span></p>
+  </td>
+  <td width=78 valign=top style='width:58.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.35pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>Surface
+  Type</span></p>
+  </td>
+  <td width=180 valign=top style='width:135.0pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.25pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>Type
+  of Surface</span></p>
+  </td>
+  <td width=162 valign=top style='width:121.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Alluvial, Terrace, Bed
+  Aquifer, Other HSA, Non HSA</span></p>
+  </td>
+ </tr>
+ <tr style='height:8.4pt'>
+  <td width=42 valign=top style='width:31.7pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Completions</span></p>
+  </td>
+  <td width=72 valign=top style='width:.75in;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Basic</span></p>
+  </td>
+  <td width=150 valign=top style='width:112.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.2pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>OG_COMPLETIONS.INCR_DENSITY</span></p>
+  </td>
+  <td width=78 valign=top style='width:58.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.35pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>Incr
+  Density</span></p>
+  </td>
+  <td width=180 valign=top style='width:135.0pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.25pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>Increased
+  density order required</span></p>
+  </td>
+  <td width=162 valign=top style='width:121.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Yes or No</span></p>
+  </td>
+ </tr>
+ <tr style='height:8.4pt'>
+  <td width=42 valign=top style='width:31.7pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Completions</span></p>
+  </td>
+  <td width=72 valign=top style='width:.75in;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Basic</span></p>
+  </td>
+  <td width=150 valign=top style='width:112.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.2pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>OG_COMPLETIONS.LOCATION_EXCEPTION</span></p>
+  </td>
+  <td width=78 valign=top style='width:58.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.35pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>Location
+  Exception</span></p>
+  </td>
+  <td width=180 valign=top style='width:135.0pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.25pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>Location
+  Exception Required</span></p>
+  </td>
+  <td width=162 valign=top style='width:121.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Yes or No</span></p>
+  </td>
+ </tr>
+ <tr style='height:8.4pt'>
+  <td width=42 valign=top style='width:31.7pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Production</span></p>
+  </td>
+  <td width=72 valign=top style='width:.75in;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>None</span></p>
+  </td>
+  <td width=150 valign=top style='width:112.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.2pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>OG_PWELLS.ALLOWABLE_CLASS</span></p>
+  </td>
+  <td width=78 valign=top style='width:58.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.35pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>Allowable
+  Class</span></p>
+  </td>
+  <td width=180 valign=top style='width:135.0pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.25pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>Allocated,
+  UnAllocated, Guymon-Hugoton, Special</span></p>
+  </td>
+  <td width=162 valign=top style='width:121.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>AG, UG, GH, SG, AO, UO</span></p>
+  </td>
+ </tr>
+ <tr style='height:8.4pt'>
+  <td width=42 valign=top style='width:31.7pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Production</span></p>
+  </td>
+  <td width=72 valign=top style='width:.75in;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>None</span></p>
+  </td>
+  <td width=150 valign=top style='width:112.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.2pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>OG_PWELLS.ALLOWABLE_TYPE</span></p>
+  </td>
+  <td width=78 valign=top style='width:58.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.35pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>Allowable
+  Type</span></p>
+  </td>
+  <td width=180 valign=top style='width:135.0pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.25pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>Individual,
+  Shared, Ratable</span></p>
+  </td>
+  <td width=162 valign=top style='width:121.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>I, R, S</span></p>
+  </td>
+ </tr>
+ <tr style='height:8.4pt'>
+  <td width=42 valign=top style='width:31.7pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Plugging</span></p>
+  </td>
+  <td width=72 valign=top style='width:.75in;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Basic</span></p>
+  </td>
+  <td width=150 valign=top style='width:112.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.2pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>OG_PLUGGING.AFFIDAVIT_1003D</span></p>
+  </td>
+  <td width=78 valign=top style='width:58.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.35pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>Affidavit
+  1003d</span></p>
+  </td>
+  <td width=180 valign=top style='width:135.0pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.25pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>Affidavit
+  of old well status approved?</span></p>
+  </td>
+  <td width=162 valign=top style='width:121.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Yes or No</span></p>
+  </td>
+ </tr>
+ <tr style='height:8.4pt'>
+  <td width=42 valign=top style='width:31.7pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Plugging</span></p>
+  </td>
+  <td width=72 valign=top style='width:.75in;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Plugs</span></p>
+  </td>
+  <td width=150 valign=top style='width:112.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.2pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>OG_PLUGGING.SAX</span></p>
+  </td>
+  <td width=78 valign=top style='width:58.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.35pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>Number
+  of Sacks</span></p>
+  </td>
+  <td width=180 valign=top style='width:135.0pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.25pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>Number
+  of sacks of cement used</span></p>
+  </td>
+  <td width=162 valign=top style='width:121.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Number</span></p>
+  </td>
+ </tr>
+ <tr style='height:8.4pt'>
+  <td width=42 valign=top style='width:31.7pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Plugging</span></p>
+  </td>
+  <td width=72 valign=top style='width:.75in;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Plugs</span></p>
+  </td>
+  <td width=150 valign=top style='width:112.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.2pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>OG_PLUGGING.SLURRY_PUMPED</span></p>
+  </td>
+  <td width=78 valign=top style='width:58.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.35pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>Slurry
+  Pumped</span></p>
+  </td>
+  <td width=180 valign=top style='width:135.0pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='text-indent:.25pt;line-height:8.4pt'><span
+  style='font-size:5.0pt;font-family:Arial;color:black;layout-grid-mode:line'>Cement
+  slurry volume pumped in cubic feet</span></p>
+  </td>
+  <td width=162 valign=top style='width:121.5pt;padding:0in 1.5pt 0in 1.5pt;
+  height:8.4pt'>
+  <p class=MsoNormal style='line-height:8.4pt'><span style='font-size:5.0pt;
+  font-family:Arial;color:black;layout-grid-mode:line'>Number</span></p>
+  </td>
+ </tr>
+</table>
+
+<p align=right style='text-align:right'><a href="#TableofContents">Back</a><a
+href="#TableofContents"><span style='text-decoration:none'><img border=0
+width=140 height=60
+src="button_blue.gif"></span></a></p>
+
+<p class=MsoNormal><script>
+defaultStatus = "Well Search"
+</script>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>

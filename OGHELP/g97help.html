@@ -1,0 +1,529 @@
+<HTML>
+<HEAD>
+<TITLE>COMPANY SYSTEM</TITLE>
+</HEAD>
+<BODY>
+
+<!-----------TITLE PAGE-----COMPANY SYSTEM---------------------PAGE 1-->
+
+<P align=center style='text-align:center'><B><SPAN style='font-size:36.0pt'>COMPANY SYSTEM</SPAN></B></P>
+
+<P align=center style='text-align:center'><img width=576 height=432 src=G97OPER1.JPG></P>
+
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+
+<P align=center style='text-align:center'><b><span style='font-size:18.0pt'>&nbsp;
+<img border=0 width=800 height=9 src="LINE_BLUE.GIF"><o:p></o:p></b></p>
+
+<!-----------TABLE OF CONTENTS PAGE--------------------------PAGE 2-->
+
+<P align=center style='text-align:center'><a name=TableofContents><B>
+Table of Contents</span></B></A></P>
+
+<P><a href="#Introduction"><span style='font-size:13.5pt'>Introduction</a></p>
+
+<P><a href="#Operators">Operators and Purchasers</a></p>
+
+<P><a href="#Pluggers">Pluggers and Pipe Pullers</a></p>
+
+<P><a href="#Seismic">Seismic Operators</a></p>
+
+<P><a href="#Facilities">Recycler/Reclaimers, Comm Pits and Comm Disposal Wells</a></p>
+
+<P><a href="#Contractors">Soil Farm Contractors</a></p>
+
+<P><a href="#Conclusion">Conclusion</span></a></p>
+
+<P>&nbsp;</P>
+
+<P>&nbsp; <img border=0 width=800 height=9 src="LINE_BLUE.GIF"></P>
+
+<P>&nbsp;</P>
+
+<P><!-----------Introduction PAGE-----------------------------------PAGE 3--></P>
+
+<P><a name=Introduction><b><span style='font-size:18.0pt'>Introduction</span></b></a><b><span
+style='font-size:18.0pt'></span></B></P>
+
+<P>The Company Information System contains information pertaining to Operators, Purchasers, Pluggers,
+Soil Farm Contractors, Commercial Pit Owners and Recycler/Reclaiming Plant Owners.  It also contains
+detail information regarding One Time Land Applications, Commercial Pits, Recycling/Reclaiming Plants,
+and Commercial Disposal Wells.  Depending on the security level of the user, the system allows viewing,
+editing, and deleting of company and detail information. Also, depending upon the users security level,
+the user can run and print reports and maintain lookup/utility table information.  The Company Information
+System allows access, in a central location, to information pertaining to most of the companies regulated
+by the Oil & Gas Conservation Division.</P>
+
+<P>To maintain data integrity, the ability to add, edit and delete information is determined by User ID.  This is an ID
+assigned by OCC, Data Processing.  Public users have view only rights and will not be allowed to view sensitive information
+such as social security numbers.  Most people are classified as public users. This includes all web users and all
+in house users that do not work in the specific section.  In the following documentation, help for the public
+will be listed first <span style='color:#00716E'>and then more detailed help
+for the specific section will follow and be displayed in a contrasting color.</span></P>
+
+<P>All Company Information System forms have some similarities.  This section will explain
+each feature.</P>
+
+<P>A few helpful terms are:<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field - An individual screen item such as operator number or company name.<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;record - A collection of related items such as an office with address information.<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;master record - The parent company record or a main record which is superior to some detail records.<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;detail record - The subordinate records related to a master record.<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lookup window - A window that opens and contains possible values for a selected field.<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;form - A visual interface to the database complete with fields, buttons, rules etc. all related a business entity.<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;query mode - When the form is in query mode it is able to accept data which is used to query the database.</P>
+
+<P>The toolbar that is available for use in this application offers many functions.  If you are unsure of what an icon will do,
+the mouse cursor can be paused over the buttons and "help text" will appear that will explain what the button does.</P>
+
+<P>When querying a record, the Enter Query <img border=0 width=20 height=20 src="entqry.gif"> and Execute Query
+<img border=0 width=20 height=20 src="exeqry.gif"> buttons can be used.  An alternate way to put the form in Enter Query
+mode is by using the F7 key and Execute Query by using the F8 key.  After the form is in query mode, enter some bit of
+information which can be used to search the database then execute the query.
+
+<P>Buttons used for data entry are the Insert Record Button <img border=0 width=20 height=20 src="insrec.gif">
+and the Remove Record Button<img border=0 width=20 height=20 src="delrec.gif">.
+
+<P>Character indicators are located on the labels of some items.  Each indicator has a unique meaning.</P>
+
+<P>   #   The pound sign is an indication that the field is expandable.  When the field is entered, it will expand
+so that the entire contents can be viewed.  When the field is exited, it will shrink back down so that all
+fields are in view.</P>
+
+<P>   *   The astrict is an indication that the field is required.  To create a new record, this bit of information
+must be filled in to proceed.</P>
+
+<P>   !   The exclamation point indicates that when the field is double-clicked, an action will be performed.  This
+action could be a lookup window which allows you to make a selection. If security allows, it can change the
+value of, or put a default value in, the current field.</P>
+
+<P>   @   The "at" symbol indicates a comment field and if double-clicked it will bring up a text
+edit box which may display a small paragraph of text or allow for adding and editing text.
+
+<P>Blue labels indicate the field is not updatable.  This is a quick indication for data entry
+personnel to skip those fields. Fields with blue labels are usually updated by a report or
+some procedure inside the form.</P>
+
+<P>At the bottom of each form is audit information.  The audit information usually consist
+of date_created, date_modified, user_created and user_modified.  If your screen resolution is
+set to 800X600, this information is not visible unless the scroll bars are used.  This information is
+useful when determining by whom and when the information was created or modified.</P>
+
+<P>When the ! indicator is encountered on items such as the City, there are several ways to do the data entry on this
+item.  If the City is simply typed in and the enter key or tab key is used, a lookup window will open and allow the correct
+zip code to be selected. If the City or Zip is not currently in the table, then it will need to be added to the Zip Code
+Table which is available under the Reports and Utilities tab in the Operator and Plugger forms. To add a City and Zip Code
+simply choose the Insert Record button(+) at the top of the form and type in the State, City, Zip.</P>
+
+<P>&nbsp;</P>
+
+<P>&nbsp;</P>
+
+<P><img border=0 width=800 height=9 src="LINE_BLUE.GIF"></P>
+
+<P align=right style='text-align:right'><A href="#TableofContents">Back</A><A
+href="#TableofContents"><img border=0 width=140 height=60 src="BUTTON_BLUE.GIF"></A></P>
+
+<P><!-----------------OPERATORS AND PURCHASERS PAGE-------------------------------------PAGE 5--></P>
+
+<a name=Operators><b><span style='font-size:18.0pt'>Operators and Purchasers</a> </span></b></a>
+
+<P>Information contained in this section is specific to the Operator form.  For more general
+information please read the <a href="#Introduction"><span style='font-size:13.5pt'>Introduction</span></a>.</p>
+
+<P>The Operator form is for viewing, maintaining or adding Oil & Gas Operator and Purchaser information.
+Companies that are not Operators or Purchasers may be viewed from the Operator form but cannot be modified.
+The default for the Operator form is to bring up all types of Companies.  To narrow your search,
+in the Operator form, to pull Companies of a specific type, simply remove the check marks from the
+types that are not desired. <img border=0 width=250 height=25 src="TYPES.JPG"> Although, unchecking a company
+type that is not desired could produce undesired effects. For example, unchecking the reclaimer checkbox
+could cause you to inadvertantly eliminate an operator if that operator was also a commercial pit owner.</P>
+
+<P>The Operator screen has a Browse and a Detail tab page in the upper section of the form
+and multiple tab pages in the lower section of the form.  The Browse tab allows the viewing of more than one
+master record. Stay on the Browse tab to query a record and then go to the Detail tab after you have made your
+selection.  The Detail tab shows more detailed information for the record selected in the browse tab.
+The Browse tab allows you to scroll or arrow up and down and select the desired company record but the
+Detail tab locks you onto the selected record to prevent accidentally changing companies.</P>
+
+<P>The tab pages at the lower half of the screen contain detail information related to the master or
+company record selected in the upper portion of the screen.  There are three sub tabs and each sub tab
+contains four sub-sub tabs. The best way to aquaint yourself with the information provided is to navigate
+through the tabs and examine them.</P>
+
+<P>The percent character can be used to query companies in cases where the exact full company name may not be known.
+Example:  Well% This query will return all Companies that begin with "Well". The query could return Well Services, Well Company,
+ect. After the desired record is found, highlight the record and then choose the detail tab to see further information.
+The lower set of tabs will bring up more detailed information related to the company you have selected. Some of the
+information may not be visible to the public, so that the privacy of the company and officers of the company can be maintained.</P>
+
+<P>&nbsp;</P>
+
+<P><img border=0 width=576 height=432 src=G97OPER1.JPG></P>
+
+<P>&nbsp;</P>
+
+<P><span style='color:#00716E'>The Insert Record Button button will be used to add a new master or company record.
+The detail information will be added by clicking into an empty record or using the down arrow to navigate to a new or
+empty record unless you are adding a new record to the Zip Code Table in which case you would use the insert button.  </P>
+
+<P><span style='color:#00716E'>To delete detail records just click in any item or field of the record and choose the
+Remove Record <img border=0 width=20 height=20 src="delrec.gif"> Button.  The Company Master Record cannot be deleted if
+any detail information exist and then can only be deleted with Surety Manager Rights.</span></P></P>
+
+<P><span style='color:#00716E'>When records are being entered, the record can be saved at any time during data entry by
+choosing Action, Save on the toolbar or clicking on the Save Icon.  Each form will automatically save information anytime
+the tab pages are changed.  If you do not want to save changes, exit the form and elect not to save.</P>
+
+<P>To insert a new Operator or Purchaser choose the Insert Record button and then begin entering
+data.  The Operator Number will be assigned automatically.  The Company Name must be entered before you can
+navigate to any other fields.  When the Offices records are ready to be added, the form automatically gets the first office
+name from the main or master record.</P>
+
+<P>When adding detail records such as offices or officers, as many records as needed can be added.
+The Offices will be listed in sub number order. The sub numbers which correspond to the operator suffix will be added
+automatically but can be edited if that is your wish. When the sub number reaches 9, it will repeat; nevertheless, more offices
+still can be entered.</P>
+
+<P>After all the Name and Address information has been added, navigate to the Surety and Related Information tab and
+a new set of sub tabs will appear that will allow the entry of Surety and Surety Related information.</P>
+
+<P>Under the Surety tab, the Bank Name is a look-up field.  Type in all or part of the Bank Name
+and double-click in the field to initiate the look-up window, then scroll through the choices until the desired Bank Name
+is displayed. If the Bank is not in the look-up window, then enter the Bank information, saved it and it will appear
+on the next lookup.</P>
+
+<P>There are many date fields in the forms with the ! indicator. When the field is double-clicked, it will put in today's
+date.  Highlight and change whatever portion of the date that is not correct if today's date is not the date you desire.</P>
+
+<P>Under the Reject Surety and 1006B tabs, just double click in the rejection reason
+field to list the default rejection reasons.  When the default rejection reasons lookup window appears,
+select a reason by double-clicking the reason or highlighting the reason and clicking 'OK'.  The reason
+will appear in the corresponding Surety or 1006B rejection reasons for this operator and ultimately on a
+rejection letter for the rejected operator.</P>
+
+<P>The rejection reasons are not limited to the default reasons.  Rejection reasons can
+be typed into the field as needed.  To add, edit or delete from the default rejection reasons, select the
+Reports and Utilities tab and then the corresponding subtab and enter or edit the reason you wish to change.
+Rejection reasons are the only items in the Operator form which can take lower case letters. This is done
+to allow lower case rejection reasons on the rejection letters if that is your wish.</span></P>
+
+<P>The Reports tab which is under the Reports and Utilities tab is used to run reports that are generated for the system.
+Information under this tab cannot be updated except by running a report.  The report information gives you the ability
+to see if and when the report is due.  This is determined by the last Run Date and how often the report is due to run.
+The Run Date is used to help you determine when the report was last run.  The From Date is the Beginning Date for the
+Report and the To Date is the Ending Date of the report.  The Run By shows who last ran the report.
+The Information field gives a brief description of how often the report should be run and what records
+it will retrieve.</span></P>
+
+<P>&nbsp;</P>
+
+<P><img border=0 width=800 height=9 src="LINE_BLUE.GIF"></P>
+
+<P align=right style='text-align:right'><a href="#TableofContents">Back</a> <a
+href="#TableofContents"><img border=0 width=140 height=60 src="BUTTON_BLUE.GIF"></A></P>
+
+<P><!----------PLUGGERS -------------------------------------------------PAGE 8--></P>
+<a name="PLUGGERS"><B><span style='font-size:18.0pt'>Pluggers and Pipe Pullers</span></B></A></P>
+
+<P>Information contained in this section is specific to the Plugger form.  For more general
+information please read the <a href="#Introduction"><span style='font-size:13.5pt'>Introduction</span></a>.</p>
+
+<P>The Plugger form is for viewing, maintaining or adding Plugger/Pipe Puller information.
+The Plugger form will bring up only Companies who are Pluggers.</P>
+
+<P>The Plugger screen has a Browse and a Detail tab page in the upper section of the form
+and multiple tab pages in the lower section of the form.  The Browse tab allows the viewing of more than one
+master record. Stay on the Browse tab to query a record and then go to the Detail tab after you have made your
+selection.  The Detail tab shows more detailed information for the record selected in the browse tab.
+The Browse tab allows you to scroll or arrow up and down and select the desired company record but the
+Detail tab locks you onto the selected record to prevent changing companies inadvertently.</P>
+
+<P>The tab pages at the lower half of the screen contain detail information related to the master or
+company record selected in the upper portion of the screen.  There are three sub tabs and each sub tab
+contains two sub-sub tabs. The best way to aquaint yourself with the information provided is to navigate
+through the tabs and examine them.</P>
+
+<P>The percent character can be used to query companies in cases where the exact full company name may not be known.
+Example:  Well% This query will return all Companies that begin with "Well". The query could return Well Services, Well Company,
+ect. After the desired record is found, highlight the record and then choose the detail tab to see further information.
+The lower set of tabs will bring up more detailed information related to the company you have selected. Some of the
+information may not be visible to the public, so that the privacy of the company and officers of the company can be maintained.</P>
+
+<P>&nbsp;</P>
+
+<P><img border=0 width=576 height=432 src="G97PLUG1.jpg"></P>
+
+<P>&nbsp;</P>
+
+<P><span style='color:#00716E'>The Insert Record Button button will be used to add a new master or company record.
+The detail information will be added by clicking into an empty record or using the down arrow to navigate to a new or
+empty record unless you are adding a new record to the Zip Code Table in which case you would use the insert button.  </P>
+
+<P><span style='color:#00716E'>To delete detail records just click in any item or field of the record and choose the
+Remove Record <img border=0 width=20 height=20 src="delrec.gif"> Button.  The Company Master Record cannot be deleted if
+any detail information exist and then can only be deleted with Plugger Manager Rights.</span></P></P>
+
+<P><span style='color:#00716E'>When records are being entered, the record can be saved at any time during data entry by
+choosing Action, Save on the toolbar or clicking on the Save Icon.  Each form will automatically save information anytime
+the tab pages are changed.  If you do not want to save changes, exit the form and elect not to save.</P>
+
+<P><span style='color:#00716E'>To insert a new Plugger, choose the Insert Record button and then begin entering
+data.  The Plugger Number will be assigned automatically.  The Company Name must be entered before you can
+navigate to any other fields.  When the Offices records are ready to be added, the form automatically gets the first office
+name from the main or master record.</P>
+
+<P>After all the Name and Address information has been added, navigate to the next tab and a new set of sub tabs will
+appear that will allow the entry of other detailed plugger information.</P>
+
+<P><span style='color:#00716E'>The Plugger Counties tab allows you to add counties that the Plugger has indicated
+they are interested in receiving bids to plug in.  Double click on the County Code field and a list of counties and their
+Codes will be listed.  Select the correct county and the click "OK" or double click a selected county to add that county
+to the list of counties the plugger wishes to plug wells in.</span></P>
+
+<P>The Reports tab which is under the Reports and Utilities tab is used to run reports that are generated for the system.
+Information under this tab cannot be updated except by running a report.  The Run Date shows when the report was last
+run and the run by shows who ran it.  The Information field gives a brief description of how often the report should be run
+and what records it will retrieve.</span></P>
+
+<P><span style='color:#00716E'>When the Bid List Report runs, it will update the Bid Letter Sent field and increment
+the Bid Counter.  When the bids come in, if the user checks the responded check box, it will reset the bid counter
+to zero.</span></P></span></span></span></span></span></span>
+<P> </P>
+
+<P> </P>
+
+<P> </P>
+
+<P> </P>
+
+<P> </P>
+
+<P>&nbsp;</P>
+
+<P><img border=0 width=800 height=9 src="LINE_BLUE.GIF"></P>
+
+<P align=right style='text-align:right'><a href="#TableofContents">Back</a> <a
+href="#TableofContents"><img border=0 width=140 height=60 src="BUTTON_BLUE.GIF"></A></P>
+
+<P><!----------SEISMIC OPERATORS -------------------------------------------------PAGE 8--></P>
+<a name="SEISMIC"><B><span style='font-size:18.0pt'>Seismic Operators</span></B></A></P>
+
+<P>&nbsp;</P>
+
+<P></P>
+
+<P></P>
+
+<P></P>
+
+<P></P>
+
+<P></P>
+
+<P><img border=0 width=576 height=432 src="G97SEIS1.JPG"></P>
+
+<P></P>
+
+<P>&nbsp;</P>
+
+<P><img border=0 width=800 height=9 src="LINE_BLUE.GIF"></P>
+
+<P align=right style='text-align:right'><a href="#TableofContents">Back</a> <a
+href="#TableofContents"><img border=0 width=140 height=60 src="BUTTON_BLUE.GIF"></A></P>
+
+<P><!----------Facilities -------------------------------------------------PAGE 9--></P>
+<a name="FACILITIES"><B><span style='font-size:18.0pt'>Recycler/Reclaimers, Comm Pits and Comm Disposal Wells</span></B></A></P>
+
+<P>&nbsp;</P>
+
+<P>This form provides information on Recycler/Reclaimers, Commercial Pits, Commercial Disposal Wells
+and companies that operate these types of facilities. Information contained in this section is specific
+to the Facilities form. For more general information please read the <a href="#Introduction"><span style='font-size:13.5pt'>Introduction</span></a>.</p>
+
+<P>A first inspection of this form reveals three tabs located at the top left corner of the screen.
+First is the Location tab, then Location Detail and third is Company Detail.  Under the Location tab
+you will see three palettes. The palettes can be minimized or restored by clicking the upper right
+hand corner of the palette. The first palette is the Reports Palette and it is minimized when the
+form is initially opened because it doesn't get the constant use like the second and third palettes.
+The Reports Palette will run four separate reports. One for each of the facility types and one report
+which is a listing of the records on display in the Location browse screen.</P>
+
+<P>The second palette is the Query Palette.  Information at the facility level can be viewed by
+selecting the appropriate query button from the Query Pallette. The first column of buttons labeled 'All'
+will select and display all facilities for a type depending upon the row of the button. The second row
+of buttons displays a facility type for a selected county. The third row of buttons displays a facility
+type for a selected company and the companies are selected from a lookup of companies ordered by company
+name. Finally, the fourth row of buttons displays a facility type for a selected company and the
+companies are selected from a lookup of companies ordered by company number. The fourth row of buttons
+allows the user to change the sort order. The sort order can be determined before or after the query.
+The Location sort button sorts by Township, Range and Section or you can sort by county, company name
+or company number.</P>
+
+<P>The third palette is the Function Palette.  The Function Palette buttons may become active or inactive
+depending on your level of security and the type of facility you have selected.  The first two functions,
+'Add Facility' and 'Change Ownership' are used only for data entry. The Show/Edit 1014A will display volumes
+in barrels for each year that a 1014A has been received and entered into the system. The 1014A is the
+Commercial Mud Disposal Annual Report required by Recycler/Reclaimers and Commercial Pits. If the
+facility is a Commercial Disposal Well, the Show 1012A and Show MIT buttons will activate.The 1012A
+is the volume report for Disposal Wells and the MIT is a Mechanical Integrity Test performed on Disposal
+and Injection Wells. </P>
+
+<P>Section, Township and Range fields can be used as delimiters by double-clicking on them. This is done
+to allow the user to further limit their selection. Double-click on the Township and all facilities not in
+that Township are removed. Double-click on the Range and all facilities not in that Township and Range
+are removed and so on with the Section.</P>
+
+<P></P>
+
+<P><img border=0 width=576 height=432 src="G97FACL1.JPG"></P>
+
+<P></P>
+<P>Depending on the Facility type selected, some items may or may not appear on the screen.
+Order Number and API Number will appear in the upper right hand corner when a commercial well is selected.
+Order Number and Public/Private appear when a Commercial Pit is selected and nothing appears in the upper
+right hand corner if the facility is a recycler/reclaimer. </P>
+
+<P>The second tab is the Location Detail tab. More detailed information can be viewed for the selected
+facility by selecting the Location Detail Tab.  Information displayed on the Location Detail Tab is
+specific to the facility type.  In other words some items may or may not appear depending on the
+type of facility selected at the Location tab. Surety information on the Location Detail tab is surety
+at the facility level, not at the company level.
+
+<P>Select the Company Detail tab to view parent company information for the owner/operator of a selected
+facility. To select a different operator, enter query mode by selecting the enter query icon and inputing
+a new owner/operator name or operator number then execute the query.  Another way to find a company is to
+double-click the operator name field and select a new operator from the lookup window.</P>
+
+<P <span style='color:#00716E'>Security prevents the Social Security number from being displayed for the public user.  Security
+for the data entry personnel depends on a combination of the Site Type and the Parent Company Type.
+The table below should simplify the security for the different combinations of Site Type and Parent
+Company Type. Inside the CRUD brackets, the code is a follows:</P>
+
+<P <span style='color:#00716E'>CR = Create<BR>U = Update<BR>D = Delete</P>
+
+
+<P>
+<TABLE align=left border=1 cellPadding=1 cellSpacing=1 width="75%" style="HEIGHT: 156px; WIDTH: 682px">
+
+  <TR>
+    <TD>
+      <P align=center span style='color:#00716E'>Site Types</P></TD>
+    <TD align=center span style='color:#00716E'>Parent Company is an operator</TD>
+    <TD>
+      <P align=center span style='color:#00716E'>Parent Company is <STRONG>not </STRONG>an Operator but is a Purchaser</P></TD>
+    <TD align=center span style='color:#00716E'>Parent Company is <STRONG>not </STRONG>an Operator or
+  Purchaser</TD></TR>
+  <TR>
+    <TD align=center span style='color:#00716E'>Commercial Disposal Well</TD>
+    <TD align=center span style='color:#00716E'>Read Only</TD>
+    <TD align=center span style='color:#00716E'>Read Only</TD>
+    <TD align=center span style='color:#00716E'>Read Only</TD></TR>
+  <TR>
+    <TD align=center span style='color:#00716E'>Commercial Pit</TD>
+    <TD>
+      <P align=center span style='color:#00716E'><LABEL>Site Information[CRUD]</LABEL><BR><LABEL>Parent Information[ ]</LABEL></P></TD>
+    <TD>
+      <P align=center span style='color:#00716E'>Site Information[CRUD]<BR>Parent Information[U]</P></TD>
+    <TD align=center span style='color:#00716E'>Site Information[CRUD]<BR>Parent Information[CRUD]</TD></TR>
+  <TR>
+    <TD align=center span style='color:#00716E'>Recycle/Reclaiming Plant</TD>
+    <TD>
+      <P align=center span style='color:#00716E'><LABEL>Site Information[CRUD]</LABEL><BR><LABEL>Parent Information[ ]</LABEL></P></TD>
+    <TD>
+      <P align=center span style='color:#00716E'><LABEL>Site Information[CRUD]</LABEL><BR><LABEL>Parent Information[U]</LABEL></P></TD>
+    <TD>
+      <P align=center span style='color:#00716E'>Site Information[CRUD]<BR>Parent Information[CRUD]</P></TD></TR></TABLE></P>
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+<P <span style='color:#00716E'>After a close inspection of the table, the following should be clear.
+Facility Data Entry Personnel cannot create an operator or a purchaser. That function is performed by the Surety
+Department. Facility Data Entry Personnel cannot update or add a Disposal Well. That function is performed
+by the UIC Department.</P>
+
+<P <span style='color:#00716E'>However, Facility Data Entry Personnel will be able to set the Facilities Checkbox = 'Y' or 'N' for
+any parent company.</span></P>
+
+<P <span style='color:#00716E'>When adding a new Facility, the Company must be selected first before the Facility
+can be added. If the Company or Parent to the Facility has not been added to the system, then it must be added
+before the Facility can be added. If the Company exist but they are not in the selection list of Companies with
+Facilities, then find the company under the Company tab and set the Facilities Checkbox = 'Y'.</span></P>
+
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+
+<P><img border=0 width=800 height=9 src="LINE_BLUE.GIF"></P>
+
+<P align=right style='text-align:right'><a href="#TableofContents">Back</a> <a
+href="#TableofContents"><img border=0 width=140 height=60 src="BUTTON_BLUE.GIF"></A></P>
+
+<P><!----------SOIL FARM OPERATORS -------------------------------------------------PAGE 10--></P>
+<a name="Contractors"><B><span style='font-size:18.0pt'>Soil Farm Contractors</span></B></A></P>
+
+<P>&nbsp;</P>
+
+<P>This form provides information on One time Land Applications and the Soil Farm Contractors.  Land Applications can
+be viewed by location or by company.  Information contained in this section is specific
+to this form. For more general information please read the <a href="#Introduction"><span style='font-size:13.5pt'>Introduction</span></a>.</p>
+</P>
+
+<P>The first step to retrieving information is to choose a County by double-clicking in the County Name field.
+This will bring up all Land Applications for the County you select.  This can then be narrowed down by Township,
+Range, and Section by double-clicking in the Township, Range or Section you want to have included in your
+selection.  The Company name is the name of the company that is contracted to do the application.  The Applicant
+Name is the name of the Company that is having the work done.</P>
+
+<P>The Location tab will bring up additional information.  The Latitude and Longitude displayed on this page are calculated
+from the legal location information provided.  The calculations are based on the center of the section if no quarters are
+entered.  The Surety information that is displayed on this form is for Commercial Soil Farms only.</P>
+
+<P>The Location tab also provides the ability to query from this form.  One example would be; If you were trying to display
+all the Commercial Applications then you would choose Enter Query(F7), put a check mark in the Commerical Box and then
+choose Execute Query(F8).  This will retrieve all of the Commercial Soil Farming operations.</P>
+
+<P>The Company Detail tab has information about the company that is contracted out to do the land applications.  Companies
+can be added but not deleted once they have performed an application.  The Company tab does not link with the Location tab,
+therefore it will not automatically pull up the Company that is listed on the particular Land Application that you are on.
+To select a company simply double-click on the company name and a list of all soil farm contracting companies will appear
+to select from.</P>
+
+<P><img border=0 width=576 height=432 src="G97LAND1.JPG"></P>
+
+<P><span style='color:#00716E'>When entering a New Land Application it is best to query all records that are in the area
+of the New Application then delimit with Township, Range and Section.  When the area has been narrowed down and the insert
+button is pressed, the new record will copy the location information from the previous record.  This information can be changed
+if it is different.  When the individual Quarters are selected, a pop-up window will appear which will aid in entering quarters.
+When entering quarters, the quarter you desire to be displayed the farthest on the left should be entered first.  If more than one
+quarter is entered the second quarter will shift the first quarter over one space to the left.  The approve date will default to
+todays date, but can also be changed.</P>
+
+<P>The Location Detail Tab has some other fields that may need to be updated when entering a Land App.  The Expiration
+Date is automatically set to 90 days after the Approve Date.</span></P>
+
+<P>&nbsp;</P>
+
+<P><img border=0 width=800 height=9 src="LINE_BLUE.GIF"></P>
+
+<P align=right style='text-align:right'><a href="#TableofContents">Back</a> <a
+href="#TableofContents"><img border=0 width=140 height=60 src="BUTTON_BLUE.GIF"></A></P>
+
+<P>&nbsp;</P>
+
+<P><!-----------CONCLUSION PAGE-----------------------PAGE 11--></P>
+<A name=Conclusion><b><span style='font-size:18.0pt'>Conclusion</span></B></A></P>
+
+<P>The purpose of this documentation is to provide general instructions, terms, and definitions and to help with navigation
+through the forms. Also, to provide a general idea concerning where and what information is presented.  It is not a detailed
+explanation.  It does not explain and was not intended to explain surety types, form 1006B, rules and regulations, or any details
+beyond the scope of simple online documentation. Therefore, please treat this document in the manner in which it was intended,
+which is simply to provide a general understanding of the information provided and to help in the retrieval of the information.
+Any questions regarding some specific area of interest or concern should be directed to some person or persons whose focus or
+expertise lies in that area.</P>
+
+<P><img border=0 width=800 height=9 src="LINE_BLUE.GIF"></P>
+

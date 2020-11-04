@@ -1,0 +1,187 @@
+*****************************************************************
+)))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))
+*****************************************************************
+Report PCN: 	G501012A 
+Report Name: 	1012A Report, Non-Compliant Wells by Operator 
+
+To Run Report:  Click on the UIC Reports item on the OG-Menu tool-bar.
+		Enter the required parameters.
+
+Parameter Example:	Operator Number   99
+			Year 1012         1997
+			Permitted by Date 01-01-1998
+
+When run with the parameters used in the previous example,
+This report will: Produce a list of wells which were permitted 
+		  before 01-01-1998, do not have a 1997 1012A and
+		  belong to operator number 99.  	
+
+
+*****************************************************************
+)))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))
+*****************************************************************
+Report 	PCN: 			G50MIT1
+Report Name: 	 		MIT Master Schedule
+Prerequesites: 			None
+Updates the uic_mits_due Table:	Yes, when run by the UIC department.
+
+To Run Report:  Select MIT Master Schedule.
+
+		Enter the required date parameter.
+
+Parameter Example:	Due by date      01-01-2003
+
+When run with the parameter used in the previous example,
+This report will: Produce a list of Wells, grouped by operator and
+                  sorted by MIT due date.  This list of wells is 
+                  obtained by taking the date of the last test and 
+                  adding the test interval to calculate a due date. 
+                  For wells which have never had an initial MIT, 
+                  the due date is calculated by taking the first 
+                  1015 order date and adding eighteen months. If 
+                  the due date falls on or before the due by date 
+                  entered at the parameter screen then that well
+                  will be on report. 
+
+*****************************************************************
+)))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))
+*****************************************************************
+Report PCN: 			G50MITD
+Report Name: 	  		MIT District Schedule
+Prerequesites: 			Both District MIT letters must run
+                                first.
+Updates the uic_mits_due Table: No
+
+To Run Report:  Select MIT District Schedule.
+                Be sure to use the same 'Due by Date' which was used  
+		by the UIC department when they ran the District MIT's
+		Due and Past Due.
+
+Parameter Example:	District         1,2,3 or 4
+
+
+Parameter Example:	Due by date      01-01-2003
+
+When run with the parameter used in the previous example,
+This report will: Produce a list of Wells which correspond
+                  to the District MIT's Due and Past Due letters.
+
+*****************************************************************
+)))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))
+*****************************************************************
+Report PCN: 			G50MIT2
+Report Name: 			MIT Single Operator Schedule 
+Prerequesites: 			None
+Updates the uic_mits_due Table: Yes
+
+To Run Report:  Select MIT Single Operator Schedule.
+
+		Enter the required date and operator 
+ 		number parameters.
+
+Parameter Example:	Due by date      01-01-2003
+			Operator #       99
+
+When run with the parameter used in the previous example,
+This report will: Produce a list of Wells which require
+                  an MIT for the selected operator.
+
+*****************************************************************
+)))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))
+*****************************************************************
+Report PCN: 			G50MIT1_l1 
+Report PCN:			G50MIT1_l2
+Report Name: 			Letters - Master MITs Due 
+Report Name: 			Letters - Master MITs Past Due
+Prerequesites: 			MIT Master Schedule must run first.
+Updates the uic_mits_due Table: No
+Special Notes: 			Letters can only be run by the UIC 
+				Department.
+
+To Run Report:  Select Letters - Master MITs Due or 
+		Select Letters - Master MITs Past Due.
+                Be sure to use the same 'Due by Date' which was used  
+		to run the MIT Master Schedule.
+
+		Enter the required date.
+
+Parameter Example:	Due by date      01-01-2003
+
+When run with the parameter used in the previous example,
+This report will: Produce MITs Due Letters or MITs Past Due letters
+		  which will correspond to the operators on the MIT
+		  Master Schedule.
+
+*****************************************************************
+)))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))
+*****************************************************************
+Report PCN: 			G50MIT1_DIS_l1 
+Report PCN:			G50MIT1_DIS_l2
+Report Name: 			Letters - District MITs Due 
+Report Name: 			Letters - District MITs Past Due
+Prerequesites: 		       *Both of these letters must run before
+                                running the MIT District Schedule.
+                                
+Updates the uic_mits_due Table: Yes, when run by the UIC department.
+Special Notes: 			Letters can only be run by the UIC 
+				Department.
+
+To Run Report:  Select Letters - District MITs Due or 
+		Select Letters - District MITs Past Due.
+                Be sure to use the same 'District' and'Due by Date' 
+                on both letters which was also used to run the MIT 
+                Master Schedule.
+               
+                Select a District from the drop down box.
+
+Parameter Example:      District         1,2,3 or 4
+
+		Enter the required date.
+
+Parameter Example:	Due by date      01-01-2003
+
+When run with the parameters used in the previous example,
+This report will: Produce District MITs Due Letters or District MITs 
+                  Past Due letters which will correspond to the 
+                  operators on the MIT District Schedule for each 
+                  selected District.
+
+*****************************************************************
+)))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))
+*****************************************************************
+Report PCN: 			G50MIT2_l1 
+Report PCN:			G50MIT2_l2
+Report Name: 			Letters - Single Operator MITs Due 
+Report Name: 			Letters - Single Operator MITs Past Due
+Prerequesites: 			MIT Single Operator Schedule must run first.
+Updates the uic_mits_due Table: No
+Special Notes: 			Letters can only be run by the UIC 
+				Department.
+
+To Run Report:  Select Letters - Single Operator MITs Due or 
+		Select Letters - Single Operator MITs Past Due.
+                Be sure to use the same 'Due by Date' which was used  
+		to run the MIT Single Operator Schedule.
+
+		Enter the required date and Operator #.
+
+Parameter Example:	Due by date      01-01-2003
+			Operator #       99
+
+When run with the parameter used in the previous example,
+This report will: Produce an MITs Due Letter or an MITs Past Due letter
+		  corresponding to the operator selected when the 
+                  MIT Single Operator Schedule was run.
+
+*****************************************************************
+)))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))
+*****************************************************************
+Report PCN:       	G50COMWELLS_R1
+Report Name: 	  	Commercial Wells by County 
+
+To Run Report:  Click on the UIC Reports item on the OG-Menu tool-bar.
+		Enter the required parameters.
+
+This report does not require parameters.
+
+This report will: Produce a list of all Commercial wells by County. 
