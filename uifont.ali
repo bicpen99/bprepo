@@ -1,0 +1,47 @@
+#
+# $Header: uifont.ali@@/main/2 \
+# Checked in on Sun Feb 22 17:41:15 PST 1998 by hwang \
+# Copyright (c) 1997, 1998 by Oracle Corporation. All Rights Reserved. \
+# $ Copyr (c) 1995 Oracle
+#
+#  Copyright (c) Oracle Corporation 1995, 1997, 1998.
+#  All Rights Reserved.
+
+/* See readme.ali for usage instructions. */
+/* MS Windows uifont.ali */
+
+[ Global ]
+
+"Terwinal 993".....     = "Terwinal 993".....we8iso8859p1
+
+/* Convert JEUC to SJIS for all fonts */
+.....jeuc               = .....sjis
+
+/* Mac Fonts */
+"Avant Garde"           = Arial
+"New Century Schlbk"    = "Times New Roman"
+"New York"              = "Times New Roman"
+Bookman                 = "Times New Roman"
+
+/* Motif fonts */
+
+lucidatypewriter        = "Courier New"
+lucidabright            = "Times New Roman"
+fixed                   = "Courier New"
+
+/* Cue card fonts */
+cuecard                 = Arial.8.Plain.Medium.Normal
+cuecardFixed            = "Courier New"..Plain.Medium.Normal
+
+
+[ Printer ]
+
+/* Mac Fonts */
+"Avant Garde"           = "Avant Garde"
+"New Century Schlbk"    = "New Century Schoolbook"
+
+/* Motif fonts */
+courier                 = "Courier New"
+times                   = "Times New Roman"
+
+[ Display ]
