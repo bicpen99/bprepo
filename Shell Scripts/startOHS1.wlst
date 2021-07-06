@@ -1,0 +1,3 @@
+nmConnect('weblogic','WjZme88oDxceSUfrUcF','dev-wls-01','5556','fr_domain_dev','/u01/app/oracle/user_projects/domains/fr_domain_dev','plain')
+nmStart(serverName='ohs1',serverType='OHS')
+exit()
